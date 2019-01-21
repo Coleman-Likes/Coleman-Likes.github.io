@@ -7,8 +7,8 @@
 body { 
     font-size: 16px; 
     line-height: 32px;
-    font-family: /* Ubuntu, sans-serif */;
-    color: /* #xxxxxx */;
+    font-family: Ubuntu, sans-serif, 'Times New Roman', Times, serif;
+    color: black;
 }
 
 h1 {
@@ -23,15 +23,16 @@ h2 {
 }
 
 header, main, footer {
-    margin: 1.25rem auto;
+    color: black
+    margin: 1.25rem auto
     padding: .5rem;
-    max-width: /* xxxpx (px = pixel is a unit of measure)  */;
+    max-width: 100%;
 }
 
 header, footer, footer a {
     text-align: center;
     background-color: /* */;
-    color: whitesmoke;
+    color: yellow;
 }
 
 header img {
