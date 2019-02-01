@@ -26,6 +26,7 @@ h2 {
     border-bottom: 1px solid #bbb;
 }
 
+/*no link */
 header, main, footer {
     color: black;
     margin: 1.25rem auto;
@@ -33,6 +34,7 @@ header, main, footer {
     max-width: 100%;
 }
 
+/*a tag is a link*/
 header, footer, footer a {
     text-align: center;
     background-color: black;
@@ -42,10 +44,17 @@ header, footer, footer a {
 }
 
 header img {
-    width: 100%;
-    height: auto;
+   /* width: auto;*/
+    position:absolute;
+    right:0;
+    padding:5px;
+    height: 25%;
     float: right;
 }
 
-/*{ footer {-->
-    font-size: /* smaller }*/
+footer {
+    position:absolute;
+    bottom:0;
+}
+
+   
