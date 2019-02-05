@@ -21,8 +21,6 @@ header {
 header img {
     /* width: auto;*/
      /*position:absolute;*/
-     vertical-align: left;
-     right:0;
      height: auto; 
      width: auto; 
      max-width: 300px;
@@ -45,26 +43,6 @@ header img {
      /*border-bottom: 1px solid #bbb;*/
         background-color: #339BFF;
  }
-
- h3 {
-    font-size: 16px;
-    text-align: center;
-     /*border-bottom: 1px solid #bbb;*/
-}
-
-h4 {
-    font-size: 16px;
-    text-align: center;
-     /*border-bottom: 1px solid #bbb;*/
-}
-
-h5 {
-    font-size: 16px;
-    text-align: center;
-     /*border-bottom: 1px solid #bbb;*/
-}
- 
- /*no link */
 
   
  main {
