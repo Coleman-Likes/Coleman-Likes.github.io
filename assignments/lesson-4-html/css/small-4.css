@@ -1,0 +1,97 @@
+
+ head{
+    color: yellow;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 100%;
+}
+header {
+    color:white;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 100%;
+    text-align: center;
+    background-color: #339BFF;
+    font-family: Helvetica;
+    font-size: 16px;
+    border-bottom: 1px solid red;
+    /*Menu tabs: 16 px, “Times New Roman.*/
+}
+
+header img {
+    /* width: auto;*/
+     /*position:absolute;*/
+     vertical-align: left;
+     right:0;
+     height: auto; 
+     width: auto; 
+     max-width: 300px;
+     max-height:300px;
+     padding:5px;
+     
+ }
+
+/*h1 {
+    /* font-size: x.xrem  (rem is a unit of measure) 
+    /*  color:  #xxxxxx 
+    text-align: center;
+    width: 100%;
+ */
+ 
+ 
+ h2 {
+     font-size: 40px;
+     text-align: center;
+     /*border-bottom: 1px solid #bbb;*/
+        background-color: #339BFF;
+ }
+
+ h3 {
+    font-size: 16px;
+    text-align: center;
+     /*border-bottom: 1px solid #bbb;*/
+}
+
+h4 {
+    font-size: 16px;
+    text-align: center;
+     /*border-bottom: 1px solid #bbb;*/
+}
+
+h5 {
+    font-size: 16px;
+    text-align: center;
+     /*border-bottom: 1px solid #bbb;*/
+}
+ 
+ /*no link */
+
+  
+ main {
+    color: white;
+    margin: 1.25rem auto;
+    /*padding: .5rem;*/
+    max-width: 100%;
+    background-color: #339BFF;
+ }
+
+ /*a tag is a link*/
+ footer {
+    text-align: center;
+    background-color: #339BFF;
+    color: white;
+    width: 100%;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 100%;
+    align-content: center, bottom;
+
+}
+
+ footer a {
+    text-align: center;
+    background-color: #339BFF;
+    color: white;
+    width: 100%;
+
+}
