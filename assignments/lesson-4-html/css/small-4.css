@@ -1,63 +1,72 @@
+body{
+    background-color: #339BFF;
+}
 
- head{
-    color: yellow;
+head{
+    color: #ffffff;
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 100%;
 }
+
 header {
-    color:white;
+    color:#ffffff;
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 100%;
     text-align: center;
-    background-color: #339BFF;
     font-family: Helvetica;
     font-size: 16px;
-    border-bottom: 1px solid red;
     /*Menu tabs: 16 px, “Times New Roman.*/
+}
+header h1{
+    font-size: 5vw;
+}
+
+.motto h2 {
+    font-size: 2.5vw;
+    font-style: italic;
 }
 
 header img {
     /* width: auto;*/
      /*position:absolute;*/
-     height: auto; 
-     width: auto; 
-     max-width: 300px;
-     max-height:300px;
+     width: 30vw;
      padding:5px;
-     
+     float: left;
  }
 
-/*h1 {
-    /* font-size: x.xrem  (rem is a unit of measure) 
-    /*  color:  #xxxxxx 
-    text-align: center;
-    width: 100%;
- */
- 
- 
- h2 {
-     font-size: 40px;
-     text-align: center;
-     /*border-bottom: 1px solid #bbb;*/
-        background-color: #339BFF;
- }
+main{
+    clear:both;
+}
 
-  
  main {
     color: white;
     margin: 1.25rem auto;
     /*padding: .5rem;*/
     max-width: 100%;
-    background-color: #339BFF;
+ }
+
+ .weather ul {
+     list-style: none;
+ }
+ .weather a {
+     text-decoration:none;
+     color:white;
+ }
+
+ .weather a:hover{
+     background-color: blue;
+ }
+
+ .weather {
+     text-align:center;
  }
 
  /*a tag is a link*/
  footer {
     text-align: center;
-    background-color: #339BFF;
-    color: white;
+    color: #ffffff;
     width: 100%;
     margin: 1.25rem auto;
     padding: .5rem;
@@ -68,8 +77,7 @@ header img {
 
  footer a {
     text-align: center;
-    background-color: #339BFF;
-    color: white;
+    color: #ffffff;
     width: 100%;
 
 }
