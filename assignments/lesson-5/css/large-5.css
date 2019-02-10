@@ -54,7 +54,7 @@ h2 {
     background: radial-gradient(blue, lightblue);
     border: 1px solid blue;
     padding: .5rem;
-    box-shadow: 0 0 30px yellow;
+    box-shadow: 0 0 30px gray;
     /*top: 10px;*/
 }
 
