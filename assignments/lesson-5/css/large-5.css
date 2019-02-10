@@ -26,6 +26,37 @@ header {
 header h1{
     font-size: 5vw;
 }
+h2 {
+    text-align: center;
+
+}
+/*
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+    border: 1px dashed cyan;
+    width:98%;
+    height:250px;
+}
+.hero-ph {
+    margin: 10px auto;
+    background-color: #eee;
+    border: 1px solid #333;
+    width:960px;
+    height:300px;
+}
+*/
+.weathersummary {
+    position: abosolute;
+    top: 50px;
+   /* top: 1rem;*/
+    left: 50px;
+    background: radial-gradient(blue, lightblue);
+    border: 1px solid blue;
+    padding: .5rem;
+    box-shadow: 0 0 30px yellow;
+    /*top: 10px;*/
+}
 
 .motto h2 {
     font-size: 2.5vw;

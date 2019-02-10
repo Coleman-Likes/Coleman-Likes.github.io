@@ -1,0 +1,83 @@
+body{
+    background-color: #339BFF;
+}
+
+head{
+    color: #ffffff;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 100%;
+}
+
+header {
+    color:#ffffff;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 100%;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 16px;
+    /*Menu tabs: 16 px, “Times New Roman.*/
+}
+header h1{
+    font-size: 5vw;
+}
+
+.motto h2 {
+    font-size: 2.5vw;
+    font-style: italic;
+}
+
+header img {
+    /* width: auto;*/
+     /*position:absolute;*/
+     width: 30vw;
+     padding:5px;
+     float: left;
+ }
+
+main{
+    clear:both;
+}
+
+ main {
+    color: white;
+    margin: 1.25rem auto;
+    /*padding: .5rem;*/
+    max-width: 100%;
+ }
+
+ .weather ul {
+     list-style: none;
+ }
+ .weather a {
+     text-decoration:none;
+     color:white;
+ }
+
+ .weather a:hover{
+     background-color: #00e64d;
+ }
+
+ .weather {
+     text-align:center;
+ }
+
+ /*a tag is a link*/
+ footer {
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 100%;
+    align-content: center, bottom;
+
+}
+
+ footer a {
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+
+}
