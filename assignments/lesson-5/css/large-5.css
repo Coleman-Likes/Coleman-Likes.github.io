@@ -47,7 +47,7 @@ h2 {
 }
 */
 .weathersummary {
-    position: abosolute;
+    position: absolute;
     top: 50px;
    /* top: 1rem;*/
     left: 50px;

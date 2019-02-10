@@ -29,6 +29,7 @@ header h1{
 h2 {
     text-align: center;
 
+
 }
 /*
 .herodiv {
@@ -47,7 +48,7 @@ h2 {
 }
 */
 .weathersummary {
-    position: abosolute;
+    position: absolute;
     top: 50px;
    /* top: 1rem;*/
     left: 50px;
