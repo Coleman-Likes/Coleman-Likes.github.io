@@ -1,0 +1,120 @@
+div.fullwidth {
+    width: 100%;
+}
+
+body{
+    background-color: #339BFF;
+}
+
+head{
+    color: #ffffff;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 100%;
+}
+
+header {
+    color:#ffffff;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 100%;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 16px;
+    /*Menu tabs: 16 px, “Times New Roman.*/
+}
+header h1{
+    font-size: 5vw;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    color: yellow;
+}
+/*
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+    border: 1px dashed cyan;
+    width:98%;
+    height:250px;
+}
+.hero-ph {
+    margin: 10px auto;
+    background-color: #eee;
+    border: 1px solid #333;
+    width:960px;
+    height:300px;
+}
+*/
+.weathersummary {
+    position: absolute;
+    top: 50px;
+   /* top: 1rem;*/
+    left: 50px;
+    background: radial-gradient(blue, lightblue);
+    border: 1px solid blue;
+    padding: .5rem;
+    box-shadow: 0 0 30px gray;
+    /*top: 10px;*/
+}
+
+.motto h2 {
+    font-size: 2.5vw;
+    font-style: italic;
+}
+
+header img {
+    /* width: auto;*/
+     /*position:absolute;*/
+     width: 30vw;
+     padding:5px;
+     float: left;
+ }
+
+main{
+    clear:both;
+}
+
+ main {
+    color: white;
+    margin: 1.25rem auto;
+    /*padding: .5rem;*/
+    max-width: 100%;
+ }
+
+ .weather ul {
+     list-style: none;
+ }
+ .weather a {
+     text-decoration:none;
+     color:white;
+ }
+
+ .weather a:hover{
+     background-color: #00e64d;
+ }
+
+ .weather {
+     text-align:center;
+ }
+
+ /*a tag is a link*/
+ footer {
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 100%;
+    align-content: center, bottom;
+
+}
+
+ footer a {
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+
+}
