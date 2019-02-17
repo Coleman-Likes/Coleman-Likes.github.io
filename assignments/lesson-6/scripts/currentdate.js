@@ -52,4 +52,4 @@ function formatDate(d){
       year = d.getFullYear();
   return day + ', ' + date + ' ' + month + ' ' + year;
 }
-document.querySelector('p5').textContent = formatDate(d);
+document.querySelector('span').textContent = formatDate(d);
