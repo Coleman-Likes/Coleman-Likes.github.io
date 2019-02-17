@@ -127,11 +127,22 @@ main{
   li a:hover {
     background-color: #111;
   }
+  .weatherforecast {
+      text-align: center;
+      color:#fff;
+      font-size:3vw;
+  }
+
+  .article-1 {
+      text-align:center;
+      color:#fff;
+      font-size:2vw;
+  }
 
  /*move footer to bottom of page*/
  footer {
     text-align: center;
-    color: #ffffff;
+    color: #fff;
     width: 100%;
     margin: 1.25rem auto;
     padding: .5rem;
@@ -140,9 +151,8 @@ main{
 
 }
  /*a tag is a link*/
- footer a {
+ /*footer a {
     text-align: center;
-    color: #ffffff;
+    color: #111;
     width: 100%;
-
-}
+}*/

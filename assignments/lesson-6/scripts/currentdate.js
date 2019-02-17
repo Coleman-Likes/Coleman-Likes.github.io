@@ -17,10 +17,11 @@ document.getElementById("date").innerHTML = n, c;
 //add to the same get elementbyid. everything will be added to line 12
 
 //move document.getelementbyid to the bottom.
-
+/*
 var d = new Date();
 var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 document.getElementById("date").innerHTML = d.toLocaleDateString('en-US', options);
+*/
 /*
 var d = new Date();
 var weekday = new Array(7);
@@ -40,3 +41,15 @@ document.getElementById("year").innerHTML=n;
 //add to the same get elementbyid. everything will be added to line 12
 
 //move document.getelementbyid to the bottom.*/
+
+var d = new Date;
+function formatDate(d){
+  var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], 
+  months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  var day = days[d.getDay()], 
+      month = months[d.getMonth()], 
+      date = d.getDate(), 
+      year = d.getFullYear();
+  return day + ', ' + date + ' ' + month + ' ' + year;
+}
+document.querySelector('p5').textContent = formatDate(d);
