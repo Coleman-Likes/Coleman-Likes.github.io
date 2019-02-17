@@ -5,7 +5,7 @@ div.fullwidth {
 body{
     background-color: #339BFF;
     font-family: 'Open+Sans', arial serif;
-    font-size: 16px;
+    font-size: 1.2vw;
 }
 
 head{
@@ -25,6 +25,7 @@ header {
     font-size: 16px;
     /*Menu tabs: 16 px, “Times New Roman.*/
 }
+
 header h1{
     font-size: 5vw;
 }
@@ -127,6 +128,10 @@ main{
     background-color: #111;
   }
 
+  .article-1 {
+    text-align: center;
+    font-size:2vw;
+}
  /*a tag is a link*/
  footer {
     text-align: center;
