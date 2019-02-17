@@ -4,6 +4,8 @@ div.fullwidth {
 
 body{
     background-color: #339BFF;
+    font-family: 'Open+Sans', arial serif;
+    font-size: 16px;
 }
 
 head{
@@ -19,7 +21,7 @@ header {
     padding: .5rem;
     max-width: 100%;
     text-align: center;
-    font-family: Helvetica;
+    font-family: Helvetica, serif, arial;
     font-size: 16px;
     /*Menu tabs: 16 px, “Times New Roman.*/
 }
@@ -93,14 +95,40 @@ main{
  }
 
  .weather a:hover{
-     background-color: #00e64d;
+     background-color: yellowgreen
  }
 
  .weather {
      text-align:center;
  }
 
- /*a tag is a link*/
+ /*center text and move menu below weather summary*/
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+ /*move footer to bottom of page*/
  footer {
     text-align: center;
     color: #ffffff;
@@ -111,7 +139,7 @@ main{
     align-content: center, bottom;
 
 }
-
+ /*a tag is a link*/
  footer a {
     text-align: center;
     color: #ffffff;

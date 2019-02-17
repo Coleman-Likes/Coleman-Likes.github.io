@@ -9,17 +9,19 @@
     <meta name="author" content="Coleman Likes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Open+Sans">
+    <link rel="stylesheet" media="(orientation: portrait)" href="css/small-5.css">
+    <link rel="stylesheet" media="(orientation: landscape)" href="css/large-5.css">
 </head>
 
-<link rel="stylesheet" media="(orientation: portrait)" href="css/small-5.css">
-<link rel="stylesheet" media="(orientation: landscape)" href="css/large-5.css">
+
 
 <body>
     <header>
         <img src="images/sunny_clouds.png" alt="Picture of clouds">
         <h1>Preston Idaho</h1>
         <div class="motto">
-        <h2>Where the city meets the mountains</h2>
+            <h2>Where the city meets the mountains</h2>
         </div>
     </header>
     <main>
@@ -45,9 +47,16 @@
                 </ul>
             </nav>
     </main>
-    <footer>Contact Information</footer>
-</body>
+    <p>5 Day Weather Summary</p>
+    <article class="article-1">This is the news article.</article>
+    <footer>Contact Information
+        <br>
+        <br>
+        <div id="date"></div>
+        <script src="scripts/currentdate.js"></script>
 
+    </footer>
+</body>
 
 
 </html>
