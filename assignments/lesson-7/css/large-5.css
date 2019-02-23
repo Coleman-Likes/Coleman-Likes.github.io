@@ -1,0 +1,158 @@
+div.fullwidth {
+    width: 100%;
+}
+
+body{
+    background-color: #339BFF;
+    font-family: 'Open+Sans', arial serif;
+    font-size: 1.2vw;
+}
+
+head{
+    color: #ffffff;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 100%;
+}
+
+header {
+    color:#ffffff;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 100%;
+    text-align: center;
+    font-family: Helvetica, serif, arial;
+    font-size: 16px;
+    /*Menu tabs: 16 px, “Times New Roman.*/
+}
+header h1{
+    font-size: 5vw;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    color: yellow;
+}
+/*
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+    border: 1px dashed cyan;
+    width:98%;
+    height:250px;
+}
+.hero-ph {
+    margin: 10px auto;
+    background-color: #eee;
+    border: 1px solid #333;
+    width:960px;
+    height:300px;
+}
+*/
+.weathersummary {
+    position: absolute;
+    top: 50px;
+   /* top: 1rem;*/
+    left: 50px;
+    background: radial-gradient(blue, lightblue);
+    border: 1px solid blue;
+    padding: .5rem;
+    box-shadow: 0 0 30px gray;
+    /*top: 10px;*/
+}
+
+.motto h2 {
+    font-size: 2.5vw;
+    font-style: italic;
+}
+
+header img {
+    /* width: auto;*/
+     /*position:absolute;*/
+     width: 30vw;
+     padding:5px;
+     float: left;
+ }
+
+main{
+    clear:both;
+}
+
+ main {
+    color: white;
+    margin: 1.25rem auto;
+    /*padding: .5rem;*/
+    max-width: 100%;
+ }
+
+ .weather ul {
+     list-style: none;
+ }
+ .weather a {
+     text-decoration:none;
+     color:white;
+ }
+
+ .weather a:hover{
+     background-color: yellowgreen
+ }
+
+ .weather {
+     text-align:center;
+ }
+
+ /*center text and move menu below weather summary*/
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+  .weatherforecast {
+      text-align: center;
+      color:#fff;
+      font-size:3vw;
+  }
+
+  .article-1 {
+      text-align:center;
+      color:#fff;
+      font-size:2vw;
+  }
+
+ /*move footer to bottom of page*/
+ footer {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 100%;
+    align-content: center, bottom;
+
+}
+ /*a tag is a link*/
+ /*footer a {
+    text-align: center;
+    color: #111;
+    width: 100%;
+}*/
