@@ -8,7 +8,7 @@
     <meta name="keywords" content="Preston weather, Preston Idaho Weather">
     <meta name="author" content="Coleman Likes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Open+Sans">
     <link rel="stylesheet" media="(orientation: portrait)" href="css/small-5.css">
     <link rel="stylesheet" media="(orientation: landscape)" href="css/large-5.css">
@@ -16,7 +16,8 @@
 
 <body>
     <header>
-        <img src="images/sunny_clouds.png" alt="Picture of clouds">
+        <!--<img src="images/sunny_clouds.png" alt="Hero Image Picture of clouds">-->
+        <img src="images/hero-image.jpeg" alt="Hero Image of a sunny field.">
         <h1>The Weather Site</h1>
         <div class="motto">
             <h2>Where the city meets the mountains</h2>
@@ -35,15 +36,15 @@
                 <p>Humidity: 80%</p>
                 <p>Wind Speed: 2 mph</p>
                 <hr>
-                <p><em>Label</em>: <span id = "somevalue">60</span> units.</p>
+                <p><em>Label</em>: <span id="somevalue">60</span> units.</p>
                 <hr>
-                <div id = "output"></div>
-                <!--<div id ="datetime"></div>-->
-                <script src = "scripts/windchill.js"></script>
+                <div id="output"></div>
+                <!--<div id ="datetime"></div>  the date should be displayed in the foooter-->
+                <script src="scripts/windchill.js"></script>
             </section>
             <nav>
                 <!--implement a toggle menu when the window is shrunk horizontally. currently not working.-->
-                    <ul class="navigation">
+                <ul class="navigation">
                     <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
                     <li><a href="preston-5.html">Home</a></li>
                     <li><a href="#">Preston</a></li>
@@ -57,16 +58,26 @@
     <p class="weatherforecast">5 Day Forecast</p>
     <article class="article-1">This is the news article.
         <br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere volutpat leo non sollicitudin. Nulla leo eros, suscipit eu fringilla et, vehicula sit amet turpis. Donec et sem eget lacus commodo efficitur. Aenean dictum pulvinar nisl. Mauris ut erat congue, imperdiet metus ac, dictum augue. Vivamus bibendum sit amet ipsum ut aliquet. Fusce vel ante sapien. Nam ac facilisis lacus. Curabitur tortor tortor, sodales ac euismod vitae, ultricies id eros. Aenean vehicula, magna nec placerat elementum, massa quam auctor nisl, at cursus quam diam vel orci. Nulla ac varius massa, sed posuere nunc. Donec sollicitudin libero porta ligula vulputate ullamcorper.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere volutpat leo non sollicitudin. Nulla
+        leo eros, suscipit eu fringilla et, vehicula sit amet turpis. Donec et sem eget lacus commodo efficitur. Aenean
+        dictum pulvinar nisl. Mauris ut erat congue, imperdiet metus ac, dictum augue. Vivamus bibendum sit amet ipsum
+        ut aliquet. Fusce vel ante sapien. Nam ac facilisis lacus. Curabitur tortor tortor, sodales ac euismod vitae,
+        ultricies id eros. Aenean vehicula, magna nec placerat elementum, massa quam auctor nisl, at cursus quam diam
+        vel orci. Nulla ac varius massa, sed posuere nunc. Donec sollicitudin libero porta ligula vulputate ullamcorper.
 
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi cursus sapien a neque feugiat, nec fermentum urna finibus. Sed hendrerit placerat urna ac ultricies. Donec vitae lectus elementum, euismod lacus a, aliquet ex. Sed id iaculis ipsum, nec tristique odio. Nullam diam nisl, fermentum ut metus a, imperdiet aliquet mauris. Phasellus erat massa, sagittis ac orci sed, lobortis commodo lectus. Morbi dignissim consectetur nisi, in gravida leo venenatis id. In hac habitasse platea dictumst. Aenean nunc dolor, facilisis mollis iaculis ac, porttitor ut dolor.
-            
-            
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi cursus
+        sapien a neque feugiat, nec fermentum urna finibus. Sed hendrerit placerat urna ac ultricies. Donec vitae lectus
+        elementum, euismod lacus a, aliquet ex. Sed id iaculis ipsum, nec tristique odio. Nullam diam nisl, fermentum ut
+        metus a, imperdiet aliquet mauris. Phasellus erat massa, sagittis ac orci sed, lobortis commodo lectus. Morbi
+        dignissim consectetur nisi, in gravida leo venenatis id. In hac habitasse platea dictumst. Aenean nunc dolor,
+        facilisis mollis iaculis ac, porttitor ut dolor.
+
+
     </article>
     <footer>Contact Information
         <br>
         <br>
-        <span id="currentDate"></span> 
+        <span id="currentDate"></span>
         <script src="scripts/currentdate.js"></script>
     </footer>
 </body>

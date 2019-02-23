@@ -62,6 +62,12 @@ main{
     /* { background-color: lightblue;*/
   
 
+        .article-1 {
+            text-align:center;
+            color:#fff;
+            font-size:2vw;
+        }
+
   .navigation {
     text-align:center;
     list-style-type: none;
@@ -106,5 +112,19 @@ main{
     text-align: center;
     color: #ffffff;
     width: 100%;
-
+ }
 }
+
+.column img {
+    max-width: 75%;
+    padding: 4px 4px;
+    width: 100%;
+    height: auto;
+    
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+      width: 100%;
+    }}
