@@ -86,21 +86,40 @@ main{
     max-width: 100%;
  }
 
- .weather ul {
+ .navigation ul {
      list-style: none;
  }
- .weather a {
+ .navigation a {
      text-decoration:none;
      color:white;
  }
 
- .weather a:hover{
+ .navigation a:hover{
      background-color: yellowgreen
  }
 
- .weather {
-     text-align:center;
+ /*.navigation is in small view so it should be in a column.*/
+ .navigation {
+     display: flex;
+     text-align: center;
+     /*display inline-block removes the extra element space outside of the text.
+     display: inline-block;
+     /*
+ text-align:center;
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+     */
+    
  }
+
+ .navigation li {
+    text-align:center;
+    display: flex;
+}
+
 
  /*center text and move menu below weather summary*/
  ul {
@@ -156,3 +175,32 @@ main{
     color: #111;
     width: 100%;
 }*/
+
+/*gallery-7.html*/
+.img-1
+{
+    max-width: 50%;
+    height: auto;
+}
+
+.row {
+    max-width: 50%;
+    height: auto;
+flex-wrap: wrap;
+padding: 0 4px;
+}
+
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }

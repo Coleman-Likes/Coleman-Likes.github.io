@@ -47,22 +47,47 @@ main{
     max-width: 100%;
  }
  
+ @media only screen and (max-width: 600px) {
+        .navigation li:first-child {display:none;}
+        .navigation li { display:block; flex: 1 1 auto;}
+        .navigation, .container {flex-direction: row;}
+    /* { background-color: lightblue;*/
+    }
+/*Use this or the above @media.
+    @media (min-width: 45em) {
+    .navigation li:first-child {display:none;}
+        .navigation li { display:block; flex: 1 1 auto;}
+        .navigation, .container {flex-direction: row;}
+    /* { background-color: lightblue;*/
+  
 
- .weather ul {
+  .navigation {
+    text-align:center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation li {
+   text-align:center;
+   display: flex;
+}
+
+
+ .navigation ul {
      list-style: none;
  }
- .weather a {
+ .navigation a {
      text-decoration:none;
      color:white;
  }
 
- .weather a:hover{
+ .navigation a:hover{
      background-color: #00e64d;
  }
 
- .weather {
-     text-align:center;
- }
 
  /*a tag is a link*/
  footer {

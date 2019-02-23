@@ -8,7 +8,7 @@
     <meta name="keywords" content="Preston weather, Preston Idaho Weather">
     <meta name="author" content="Coleman Likes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="../../css/normalize.css">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Open+Sans">
     <link rel="stylesheet" media="(orientation: portrait)" href="css/small-5.css">
     <link rel="stylesheet" media="(orientation: landscape)" href="css/large-5.css">
@@ -22,6 +22,7 @@
             <h2>Where the city meets the mountains</h2>
         </div>
     </header>
+    <!--add responsive images from week 6.-->
     <main>
         <h2>Links</h2>
         <div class="herodiv">
@@ -33,16 +34,23 @@
                 <p>Wind Chill: 78 °F</p>
                 <p>Humidity: 80%</p>
                 <p>Wind Speed: 2 mph</p>
+                <hr>
+                <p><em>Label</em>: <span id = "somevalue">60</span> units.</p>
+                <hr>
+                <div id = "output"></div>
+                <!--<div id ="datetime"></div>-->
+                <script src = "scripts/windchill.js"></script>
             </section>
-            <nav class="weather">
-                <ul>
+            <nav>
+                <!--implement a toggle menu when the window is shrunk horizontally. currently not working.-->
+                    <ul class="navigation">
                     <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
                     <li><a href="preston-5.html">Home</a></li>
                     <li><a href="#">Preston</a></li>
                     <li><a href="#">Soda Springs</a></li>
                     <li><a href="#">Fish Haven</a></li>
                     <li><a href="#">Storm Center</a></li>
-                    <li><a href="#">Gallery</a></li>
+                    <li><a href="html/gallery-7.html">Gallery</a></li>
                 </ul>
             </nav>
     </main>
