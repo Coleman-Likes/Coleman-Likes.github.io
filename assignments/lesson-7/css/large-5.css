@@ -34,25 +34,22 @@ h2 {
 h3 {
     color: #fff;
 }
-/*
-.herodiv {
+
+/*.herodiv {
     margin: 10px auto;
     position: relative;
     border: 1px dashed cyan;
     width:98%;
     height:250px;
 }
-.hero-ph {
-    margin: 10px auto;
-    background-color: #eee;
-    border: 1px solid #333;
-    width:960px;
-    height:300px;
-}
 */
+.hero-ph {
+   position: relative;
+}
+
 .weathersummary {
     position: absolute;
-    top: 450px;
+    top: 150px;
    /* top: 1rem;*/
     left: 50px;
     margin-bottom:5px;
