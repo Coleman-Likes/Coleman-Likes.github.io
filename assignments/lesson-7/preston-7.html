@@ -17,18 +17,32 @@
 <body>
     <header>
         <!--<img src="images/sunny_clouds.png" alt="Hero Image Picture of clouds">-->
-        <img src="images/hero-image.jpeg" alt="Hero Image of a sunny field.">
         <h1>The Weather Site</h1>
         <div class="motto">
             <h2>Where the city meets the mountains</h2>
         </div>
+        <h3>Preston Idaho</h3>
+
     </header>
     <!--add responsive images from week 6.-->
     <main>
-        <h2>Preston Idaho</h2>
         <div class="herodiv">
-            <div class="hero-ph"></div>
-            <section class="weathersummary">
+
+            <nav>
+                <!--implement a toggle menu when the window is shrunk horizontally. currently not working.-->
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="preston-5.html">Home</a></li>
+                    <li><a href="#">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="html/gallery-7.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <div class="hero-ph">
+                <img class="heroimage" src="images/hero-image.jpeg" alt="Hero Image of a sunny field.">
+                <section class="weathersummary">
                 <h3>Weather Summary</h3>
                 <p>Currently: Cloudy</p>
                 <p>High: 36 °F</p>
@@ -42,18 +56,7 @@
                 <!--<div id ="datetime"></div>  the date should be displayed in the foooter-->
                 <script src="scripts/windchill.js"></script>
             </section>
-            <nav>
-                <!--implement a toggle menu when the window is shrunk horizontally. currently not working.-->
-                <ul class="navigation">
-                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
-                    <li><a href="preston-5.html">Home</a></li>
-                    <li><a href="#">Preston</a></li>
-                    <li><a href="#">Soda Springs</a></li>
-                    <li><a href="#">Fish Haven</a></li>
-                    <li><a href="#">Storm Center</a></li>
-                    <li><a href="html/gallery-7.html">Gallery</a></li>
-                </ul>
-            </nav>
+        </div>
     </main>
     <p class="weatherforecast">5 Day Forecast</p>
     <article class="article-1">This is the news article.

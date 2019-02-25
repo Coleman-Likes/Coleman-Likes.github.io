@@ -22,7 +22,7 @@ header {
     max-width: 100%;
     text-align: center;
     font-family: Helvetica, serif, arial;
-    font-size: 16px;
+    font-size: 2vw;
     /*Menu tabs: 16 px, “Times New Roman.*/
 }
 header h1{
@@ -32,7 +32,7 @@ h2 {
     text-align: center;
 }
 h3 {
-    color: yellow;
+    color: #fff;
 }
 /*
 .herodiv {
@@ -52,13 +52,16 @@ h3 {
 */
 .weathersummary {
     position: absolute;
-    top: 50px;
+    top: 450px;
    /* top: 1rem;*/
     left: 50px;
+    margin-bottom:5px;
     background: radial-gradient(blue, lightblue);
     border: 1px solid blue;
     padding: .5rem;
     box-shadow: 0 0 30px gray;
+    /*dynamically change element box size depending on other elements. 
+    Have it push down the navigation bar element*/
     /*top: 10px;*/
 }
 
@@ -67,12 +70,16 @@ h3 {
     font-style: italic;
 }
 
-header img {
+.heroimage {
     /* width: auto;*/
      /*position:absolute;*/
-     width: 30vw;
+     width: 95%;
      padding:5px;
      float: left;
+     margin-top: 100px;
+    /* margin-bottom: 100px;*/
+     margin-right: 150px;
+    /* margin-left: 80px;*/
  }
 
 main{
@@ -183,6 +190,7 @@ main{
     padding: 4px 4px;
     width: 100%;
     height: auto;
+    grid-auto-columns:  
     
   }
   
