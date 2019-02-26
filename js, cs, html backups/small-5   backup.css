@@ -1,0 +1,141 @@
+﻿small-5 css backup
+
+
+body{
+    background-color: #339BFF;
+}
+
+head{
+    color: #ffffff;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 100%;
+}
+
+header {
+    color:#ffffff;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 100%;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 16px;
+    /*Menu tabs: 16 px, “Times New Roman.*/
+}
+header h1{
+    font-size: 5vw;
+}
+
+.motto h2 {
+    font-size: 2.5vw;
+    font-style: italic;
+}
+
+
+.heroimage
+{
+    width: 100vw
+   /* max-width: 100%;*/
+}
+
+
+header img {
+    /* width: auto;*/
+     /*position:absolute;*/
+     width: 30vw;
+     padding:5px;
+     float: left;
+ }
+
+main{
+    clear:both;
+}
+
+ main {
+    color: white;
+    margin: 1.25rem auto;
+    /*padding: .5rem;*/
+    max-width: 100%;
+ }
+ 
+/* @media only screen and (max-width: 600px) {
+        .navigation li:first-child {display:none;}
+        .navigation li { display:block; flex: 1 1 auto;}
+        .navigation, .container {flex-direction: row;}
+    /* { background-color: lightblue;*/
+  /*  }
+*/
+
+    @media (min-width: 45em) {
+    .navigation li:first-child {display:none;}
+        .navigation li { display:block; flex: 1 1 auto;}
+        .navigation, .container {flex-direction: row;}
+    /* { background-color: lightblue;*/
+  
+
+        .article-1 {
+            text-align:center;
+            color:#fff;
+            font-size:2vw;
+        }
+
+  .navigation {
+    text-align:center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation li {
+   text-align:center;
+   display: flex;
+}
+
+
+ .navigation ul {
+     list-style: none;
+ }
+ .navigation a {
+     text-decoration:none;
+     color:white;
+ }
+
+ .navigation a:hover{
+     background-color: #00e64d;
+ }
+
+
+ /*a tag is a link*/
+ footer {
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 100%;
+    align-content: center, bottom;
+
+}
+
+ footer a {
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+ }
+}
+
+.column img {
+    max-width: 75%;
+    padding: 4px 4px;
+    width: 100%;
+    height: auto;
+    
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+      width: 100%;
+    }}

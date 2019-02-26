@@ -1,33 +1,17 @@
-div.fullwidth {
+@media only screen and (min-width: 45em) {
+    div.fullwidth {
     width: 100%;
 }
+/* navigation bar */
+.navigation li:first-child { display: none;	}
+	.navigation li { display: inline-block; margin-right: 1rem;}	
+    .navigation li a { color: white;}
+
 
 body{
-    background-color: #339BFF;
-    font-family: 'Open+Sans', arial serif;
     font-size: 1.2vw;
 }
 
-head{
-    color: #ffffff;
-    margin: 1.25rem auto;
-    padding: .5rem;
-    max-width: 100%;
-}
-
-header {
-    color:#ffffff;
-    margin: 1.25rem auto;
-    padding: .5rem;
-    max-width: 100%;
-    text-align: center;
-    font-family: Helvetica, serif, arial;
-    font-size: 2vw;
-    /*Menu tabs: 16 px, “Times New Roman.*/
-}
-header h1{
-    font-size: 5vw;
-}
 h2 {
     text-align: center;
 }
@@ -35,14 +19,6 @@ h3 {
     color: #fff;
 }
 
-/*.herodiv {
-    margin: 10px auto;
-    position: relative;
-    border: 1px dashed cyan;
-    width:98%;
-    height:250px;
-}
-*/
 .hero-ph {
    position: relative;
 }
@@ -60,11 +36,6 @@ h3 {
     /*dynamically change element box size depending on other elements. 
     Have it push down the navigation bar element*/
     /*top: 10px;*/
-}
-
-.motto h2 {
-    font-size: 2.5vw;
-    font-style: italic;
 }
 
 .heroimage {
@@ -90,66 +61,12 @@ main{
     max-width: 100%;
  }
 
- .navigation ul {
-     list-style: none;
- }
- .navigation a {
-     text-decoration:none;
-     color:white;
- }
-
- .navigation a:hover{
-     background-color: yellowgreen
- }
-
- /*.navigation is in small view so it should be in a column.*/
- .navigation {
-     display: flex;
-     text-align: center;
-     /*display inline-block removes the extra element space outside of the text.
-     display: inline-block;
-     /*
- text-align:center;
-     list-style-type: none;
-     padding: 0;
-     margin: 0;
-     display: flex;
-     flex-direction: column;
-     */
-    
- }
-
- .navigation li {
-    text-align:center;
-    display: flex;
-}
 
 
  /*center text and move menu below weather summary*/
- ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
+ 
   /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
-  }
+ 
   .weatherforecast {
       text-align: center;
       color:#fff;
@@ -162,17 +79,7 @@ main{
       font-size:2vw;
   }
 
- /*move footer to bottom of page*/
- footer {
-    text-align: center;
-    color: #fff;
-    width: 100%;
-    margin: 1.25rem auto;
-    padding: .5rem;
-    max-width: 100%;
-    align-content: center, bottom;
 
-}
  /*a tag is a link*/
  /*footer a {
     text-align: center;
@@ -182,20 +89,8 @@ main{
 
 /*gallery-7.html*/
 
-.column img {
-    max-width: 30%;
-    padding: 4px 4px;
-    width: 100%;
-    height: auto;
-    /*
+.column {
     display: grid;
-    grid-auto-columns: 50px;
-    */
-    
+    grid-template-columns: 1fr 1fr 1fr;
 }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-    .column {
-      max-width: 50%;
-    }}
+}
