@@ -100,3 +100,7 @@ main{
     margin: 0 auto;
     grid-gap: 10px;
 }
+picture {
+    color:#fff;
+}
+
