@@ -1,0 +1,106 @@
+body{
+    background-color: #339BFF;    
+    font-family: 'Open+Sans', arial serif;
+}
+
+head{
+    color: #ffffff;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 100%;
+}
+/* ------- HEADER ------- */
+header {
+    color:#ffffff;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 100%;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 16px;
+    /*Menu tabs: 16 px, “Times New Roman.*/
+}
+header h1{
+    font-size: 5vw;
+}
+h3 {
+    text-align: center;
+    font-size: 3vw;
+}
+
+.motto h2 {
+    font-size: 2.5vw;
+    font-style: italic;
+}
+
+.heroimage
+{
+    width: 100vw;
+   /* max-width: 100%;*/
+}
+
+main{
+    clear:both;
+}
+
+ main {
+    color: white;
+    margin: 1.25rem auto;
+    /*padding: .5rem;*/
+    max-width: 100%;
+ }
+
+.article-1 {
+    text-align:center;
+    color:#fff;
+    font-size:2vw;
+        }
+
+/* ------- NAV ------- */
+  nav {	margin: 0 auto;	width: 100%; background-color: blue;	}
+.navigation { list-style: none; text-align: center; padding-left: 0;}
+  .navigation li:first-child { display: block;}
+  .navigation li { display: none;}
+  .navigation a {	display: block;	color: #fff; padding: .75rem;	text-align: center;	text-decoration: none;}
+  .navigation a:hover {	color: #fff; background-color: #000; font-weight: 700;	}
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+
+.responsive li { display: block; }
+
+
+/*--------FOOTER---------- */
+ footer {
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 100%;
+    align-content: center, bottom;
+
+}
+
+ footer a {
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+ }
+
+ /* ----------gallery-7----------*/
+ .column img{
+     width: 100%;
+ }
+ .column {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    grid-gap: 10px;
+}
+picture {
+    color:#fff;
+}
+
