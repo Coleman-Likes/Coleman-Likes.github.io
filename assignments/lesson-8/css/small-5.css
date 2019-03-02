@@ -103,6 +103,7 @@ main{
 picture {
     color:#fff;
 }
+
 /*tablebuild.html*/
 
 /*html
@@ -112,6 +113,8 @@ picture {
 .wildwest{
     font-family: 'Ubuntu', sans-serif;
     display: table;
+    /*box-shadow: 5px 10px grey;*/
+
     /*width: 100%;*/
     /*border: .1px solid #fff;*/
 }
@@ -120,6 +123,7 @@ font-style: bold;
 color: black;
 background-color: #7fb9c2;
 padding: 17px;
+
 }
 tbody{
 color: black;
@@ -161,4 +165,5 @@ tr:nth-child(even) {
 .novembersalesgoal{
     color:white;
     background-color:#628ca6;
+    column-span: 3;
 }
