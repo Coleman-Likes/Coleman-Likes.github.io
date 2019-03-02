@@ -1,5 +1,7 @@
-let x = parseInt(document.getElementById('somevalue').innerHTML);
+let x = parseInt(document.getElementById('windchill').innerHTML);
 let result = (x + 10) / 2;
+let result = (x )
+
 document.getElementById('output').innerHTML = "The temperature is <strong>" + result.toFixed(1) + "</strong>";
 
 /*The formula to calculate the wind chill factor is 

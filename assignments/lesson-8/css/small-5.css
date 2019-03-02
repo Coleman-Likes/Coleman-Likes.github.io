@@ -105,6 +105,60 @@ picture {
 }
 /*tablebuild.html*/
 
-html
+/*html
 {font-family: 'Ubuntu', sans-serif;
+}*/
+
+.wildwest{
+    font-family: 'Ubuntu', sans-serif;
+    display: table;
+    /*width: 100%;*/
+    /*border: .1px solid #fff;*/
+}
+thead th{
+font-style: bold;
+color: black;
+background-color: #7fb9c2;
+padding: 17px;
+}
+tbody{
+color: black;
+}
+
+tfoot td{
+color: black;
+background-color: #7fb9c2;
+/*display: flex;
+flex-wrap: wrap;
+align-content: center;*/
+text-align: center;
+
+
+}
+
+.wildwest th, td{
+    padding: 10px;
+    border: 1px solid grey;
+    text-align: center;
+    margin: 0 auto;
+
+    /*border: 1px solid #ddd;*/
+
+}
+
+tbody tr:first-child{
+    color: white;
+    font-style:bold;
+    background-color:#628ca6;
+}
+tr:nth-child(odd)
+{
+    background-color: #e7ffed;
+  }
+tr:nth-child(even) {
+    background-color: #e7f0ed;
+  }
+.novembersalesgoal{
+    color:white;
+    background-color:#628ca6;
 }

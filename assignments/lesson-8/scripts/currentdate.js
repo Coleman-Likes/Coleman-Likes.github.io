@@ -52,4 +52,4 @@ function formatDate(d){
       year = d.getFullYear();
   return day + ', ' + date + ' ' + month + ' ' + year;
 }
-document.querySelector('span').textContent = formatDate(d);
+document.getElementById('currentDate').innerHTML = formatDate(d);
