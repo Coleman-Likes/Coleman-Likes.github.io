@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Weather website for Preston, Idaho">
+    <title>Preston Idaho Weather Site</title>
+    <meta name="keywords" content="Preston weather, Preston Idaho Weather">
+    <meta name="author" content="Coleman Likes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--<link rel="stylesheet" href="https://fonts.google.com/specimen/Open+Sans">-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/small-5.css">
+    <link rel="stylesheet" href="css/large-5.css">
+</head>
+
+<body>
+    <header>
+        <!--<img src="images/sunny_clouds.png" alt="Hero Image Picture of clouds">-->
+        <h1>Stormcenter Forum</h1>
+       <!-- <h3>Preston Idaho</h3>-->
+
+    </header>
+    <!--add responsive images from week 6.-->
+    <main>
+        <div class="herodiv">
+
+            <nav>
+                <!--implement a toggle menu when the window is shrunk horizontally. currently not working.-->
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="preston-8.html">Home</a></li>
+                    <li><a href="#">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="html/gallery-8.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <h3>Preston Idaho</h3>
+
+    </main>
+
+    <h2>Text Input</h2>
+
+<form>
+  First name:<br>
+  <input type="text" name="firstname">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname">
+</form>
+
+<p>Note that the form itself is not visible.</p>
+
+<p>Also note that the default width of a text input field is 20 characters.</p>
+    <footer>Contact Information
+        <br>
+        <br>
+        <span id="currentDate"></span>
+        <script src="scripts/currentdate.js"></script>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+</body>
+
+
+</html>
