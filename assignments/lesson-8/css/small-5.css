@@ -167,3 +167,12 @@ tr:nth-child(even) {
     background-color:#628ca6;
     column-span: 3;
 }
+
+/*stormcenter.html*/
+
+.h1forum{
+    color:white;
+}
+form{
+    color: white;
+}

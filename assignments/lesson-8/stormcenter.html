@@ -18,8 +18,8 @@
 <body>
     <header>
         <!--<img src="images/sunny_clouds.png" alt="Hero Image Picture of clouds">-->
-        <h1>Stormcenter Forum</h1>
-       <!-- <h3>Preston Idaho</h3>-->
+        <h1 class="h1forum">Stormcenter Forum</h1>
+        <!-- <h3>Preston Idaho</h3>-->
 
     </header>
     <!--add responsive images from week 6.-->
@@ -44,17 +44,74 @@
 
     <h2>Forum</h2>
 
-<form>
-  First name:<br>
-  <input type="text" name="firstname">
-  <br>
-  Last name:<br>
-  <input type="text" name="lastname">
-</form>
+    <form action "html/thanks.html" method="get">
+        Full Name:
+        <br>
+        <input type="text" name="full name">
+        <br>
+        email:
+        <br>
+        <input type="email" name="emailaddress">
+        <br>
+        Phone Number:
+        <br>
+        <input type="tel" name="phonenumber" required>
+        <br>
+        Zip Code:
+        <br>
+        <input type="number" name="zipcode" required>
+        <br>
+        Storm Date:
+        <br>
+        <input type="date" name="stormdate">
+        <br>
+        Storm Type:
+        <br>
+        <input type="list" name="stormtype" required>
+        <br>
+        <br>
+        <fieldset>
+            <label for="rating">Rating (1 to 10):</label>
+            <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)"
+                onchange="adjustRating(this.value)">
+            <span id="ratingvalue">5</span><br>
 
-<p>Note that the form itself is not visible.</p>
+        </fieldset>
+        <br>
+        <br>
+        Storm Region
+        <br>
+        <input type="select" name="stormregion" required>
+        <br>
+        <br>
+        <fieldset>
+            <legend>User in Danger Area <em>(Choose one)</em></legend>
+            <div>
+                <input type="radio" id="time1" name="time" value="8" checked>
+                <label for="time1">Yes</label>
+            </div>
+            <div>
+                <input type="radio" id="time2" name="time" value="9">
+                <label for="time2">Maybe</label>
+            </div>
+            <div>
+                <input type="radio" id="time3" name="time" value="10">
+                <label for="time3">No</label>
+            </div>
+        </fieldset>
 
-<p>Also note that the default width of a text input field is 20 characters.</p>
+
+        <label for="choose">Submit Forum</label>
+        <br>
+        <br>
+        <button>Submit</button>
+
+        <button type="submit" formaction="/action_page2.php">
+
+            Submit to another page</button>
+
+    </form>
+
     <footer>Contact Information
         <br>
         <br>
@@ -62,6 +119,7 @@
         <script src="scripts/currentdate.js"></script>
     </footer>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/rating.js"></script>
 </body>
 
 
