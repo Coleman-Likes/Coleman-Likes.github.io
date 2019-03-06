@@ -123,6 +123,8 @@ font-style: bold;
 color: black;
 background-color: #7fb9c2;
 padding: 17px;
+padding: 0;
+margin: 0;
 
 }
 tbody{
