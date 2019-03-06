@@ -177,4 +177,5 @@ tr:nth-child(even) {
 }
 form{
     color: white;
+    text-align:center;
 }
