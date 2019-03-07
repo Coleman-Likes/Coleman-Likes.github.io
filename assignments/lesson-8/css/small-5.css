@@ -177,5 +177,11 @@ tr:nth-child(even) {
 }
 form{
     color: white;
-    text-align:center;
+    /*text-align:center;*/
+    font-size: 2vw;
+    margin-left: 10px;
+}
+form label, input{
+    margin:1.5%;
+    margin-left: 10px;
 }
