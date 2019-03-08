@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Weather website for Preston, Idaho">
+    <title>Preston Idaho Weather Site</title>
+    <meta name="keywords" content="Preston weather, Preston Idaho Weather">
+    <meta name="author" content="Coleman Likes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--<link rel="stylesheet" href="https://fonts.google.com/specimen/Open+Sans">-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/small-5.css">
+    <link rel="stylesheet" href="css/large-5.css">
+</head>
+
+<body>
+    <header>
+        <!--<img src="images/sunny_clouds.png" alt="Hero Image Picture of clouds">-->
+        <h1 class="h1forum">Stormcenter Form</h1>
+        <!-- <h3>Preston Idaho</h3>-->
+
+    </header>
+    <!--add responsive images from week 6.-->
+    <main>
+        <div class="herodiv">
+
+            <nav>
+                <!--implement a toggle menu when the window is shrunk horizontally. currently not working.-->
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="preston-8.html">Home</a></li>
+                    <li><a href="#">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="html/gallery-8.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <h3>Form</h3>
+
+    </main>
+
+    <form>
+        <label for="full name">Full Name:</label>
+        <input type="text" name="full name">
+        <br>
+        <label for="full name">email:</label>        
+        <input type="email" name="emailaddress">
+        <br>
+        
+        <label for="phonenumber">Phone Number:</label>
+        <input type="tel" name="phonenumber" required>
+        <br>
+        <label for="zip code">Zip Code:</label>       
+        <input type="number" name="zipcode" required>
+        <br>
+        <label for="stormdate">Storm Date:</label> 
+        <input type="date" name="stormdate">
+        <br>
+        <label for="stormtype">Storm Type:</label>
+        <input type="list" name="stormtype" required>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Storm Severity</legend>
+            <label for="rating">Rating (1 to 10):</label>
+            <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)"
+                onchange="adjustRating(this.value)">
+            <span id="ratingvalue">5</span><br>
+
+        </fieldset>
+        <br>
+        <label for="stormregion">Storm Region:</label>
+        <input type="select" name="stormregion" required>
+        <br>
+        <br>
+        <fieldset>
+            <legend>User in Danger Area <em>(Choose one)</em></legend>
+            <div>
+                <input type="radio" id="time1" name="time" value="8" checked>
+                <label for="time1">Yes</label>
+            </div>
+            <div>
+                <input type="radio" id="time2" name="time" value="9">
+                <label for="time2">Maybe</label>
+            </div>
+            <div>
+                <input type="radio" id="time3" name="time" value="10">
+                <label for="time3">No</label>
+            </div>
+        </fieldset>
+
+
+        <label for="choose">Submit Form</label>
+        <br>
+        <br>
+            <input type="submit" formaction="html/thanks.html" target="_blank">
+
+    </form>
+
+    <footer>Contact Information
+        <br>
+        <br>
+        <span id="currentDate"></span>
+        <script src="scripts/currentdate.js"></script>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/rating.js"></script>
+</body>
+
+
+</html>
