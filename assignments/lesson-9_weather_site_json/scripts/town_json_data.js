@@ -31,10 +31,10 @@ function newTowns(jsonObj) {
 
         var myPara3 = document.createElement('p');
 
-        var myList = document.createElement('ul');
+        var myPara4 = document.createElement('p');
 
 
-        section.appendChild(myArticle);
+        section.appendChild(article);
 
 
         myPara1.textContent = towns[i].motto;
