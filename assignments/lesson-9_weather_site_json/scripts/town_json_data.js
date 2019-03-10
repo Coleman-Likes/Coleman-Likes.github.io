@@ -16,7 +16,7 @@ function newTowns(jsonObj) {
     var towns = jsonObj['towns'];
     //header.appendChild(myH1);
 
-    for (var i = 0; i < heroes.length; i++) {
+    for (var i = 0; i < towns.length; i++) {
 
         var article = document.createElement('article');
         var h2 = document.createElement('h2');
