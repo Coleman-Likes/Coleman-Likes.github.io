@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Weather website for Preston, Idaho">
+    <title>Idaho Weather Site</title>
+    <meta name="keywords" content="Preston weather, Preston Idaho Weather">
+    <meta name="author" content="Coleman Likes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/small-9.css">
+    <link rel="stylesheet" href="css/large-9.css">
+</head>
+
+<body>
+    <header>
+        <h1>Preston Idaho Weather Site</h1>
+        <div class="motto">
+            <h2>Where the city meets the mountains</h2>
+        </div>
+
+    </header>
+    <main>
+        <div class="herodiv">
+
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="preston-9.html">Home</a></li>
+                    <li><a href="#">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="html/gallery-9.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <h3>Index</h3>
+        </div>
+    </main>
+        
+    <section id ="towndataid"></section>
+
+
+
+    <footer>Contact Information
+        <br>
+        <br>
+        <span id="currentDate"></span>
+    </footer>
+    <script src="scripts/town_json_data.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+
+</html>
