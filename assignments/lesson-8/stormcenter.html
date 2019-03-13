@@ -38,24 +38,25 @@
     </main>
 
     <form>
-        <label for="full name">Full Name:</label>
-        <input type="text" name="full name">
-        <br>
-        <label for="full name">email:</label>        
-        <input type="email" name="emailaddress">
-        <br>
-        
-        <label for="phonenumber">Phone Number:</label>
-        <input type="tel" name="phonenumber" required>
-        <br>
-        <label for="zip code">Zip Code:</label>       
-        <input type="number" name="zipcode" required>
-        <br>
-        <label for="stormdate">Storm Date:</label> 
-        <input type="date" name="stormdate">
-        <br>
-        <label for="stormtype">Storm Type:</label>
-        <input type="list" name="stormtype" required>
+        <div class="formbox">
+            <label for="full name">Full Name:</label>
+            <input type="text" name="full name">
+            <br>
+            <label for="full name">email:</label>
+            <input type="email" name="emailaddress">
+            <br>
+            <label for="phonenumber">Phone Number:</label>
+            <input type="tel" name="phonenumber" required>
+            <br>
+            <label for="zip code">Zip Code:</label>
+            <input type="number" name="zipcode" required>
+            <br>
+            <label for="stormdate">Storm Date:</label>
+            <input type="date" name="stormdate">
+            <br>
+            <label for="stormtype">Storm Type:</label>
+            <input type="list" name="stormtype" required>
+        </div>
         <br>
         <br>
         <fieldset>
@@ -72,7 +73,7 @@
         <br>
         <br>
         <fieldset>
-            <legend>User in Danger Area <em>(Choose one)</em></legend>
+            <legend>User in Danger Area <em>(Choose one):</em></legend>
             <div>
                 <input type="radio" id="time1" name="time" value="8" checked>
                 <label for="time1">Yes</label>
@@ -86,13 +87,28 @@
                 <label for="time3">No</label>
             </div>
         </fieldset>
-
-
-        <label for="choose">Submit Form</label>
+        <br>
+        <div class ="textarea">
+            <p>Additional information or comments:</p>
+        <textarea rows="4" cols="30"></textarea>
+    </div>
+        <!--<div>
+                <form action="/action_page.php" id="carform">
+                    Firstname:<input type="text" name="fname">
+                    <input type="submit">
+                  </form>
+                  <br>
+                  <select name="planes" form="planeform">
+                    <option value="volvo">plane</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                  </select>
+            </div>-->
+        <!--<label for="choose">Submit Form</label>-->
         <br>
         <br>
-            <input type="submit" formaction="html/thanks.html" target="_blank">
-
+        <input type="submit" formaction="html/thanks.html" target="_blank">
     </form>
 
     <footer>Contact Information
