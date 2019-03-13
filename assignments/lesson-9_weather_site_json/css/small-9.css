@@ -188,3 +188,14 @@ form label, input{
 #thankyou{
     font-size:3vw;
 }
+
+/*JSON*/
+#towndataid{
+    color:#fff;
+    text-align:center;
+    display:flex;
+}
+
+.idahoarticle{
+    
+}
