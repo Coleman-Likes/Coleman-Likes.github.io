@@ -42,8 +42,8 @@
             <label for="full name">Full Name:</label>
             <input type="text" name="full name" required>
             <br>
-            <label for="full name">email:</label>
-            <input type="email" name="emailaddress">
+            <label for="email">email:</label>
+            <input type="email" id="emailid" name="emailaddress" placeholder="johndoe@gmail.com">
             <br>
             <label for="phonenumber">Phone Number:</label>
             <input type="tel" name="phonenumber" required>
@@ -57,12 +57,12 @@
             <label for="stormtype">Storm Type:</label>
             <input list="stormtype">
             <datalist id="stormtype">
-                    <option value="Flash Flood">
-                    <option value="Hail">
-                    <option value="Hurricane">
-                    <option value="Thunderstorm">
-                    <option value="Tornado">
-                  </datalist>
+                <option value="Flash Flood">
+                <option value="Hail">
+                <option value="Hurricane">
+                <option value="Thunderstorm">
+                <option value="Tornado">
+            </datalist>
         </div>
         <br>
         <br>
@@ -75,8 +75,17 @@
 
         </fieldset>
         <br>
+        <!--<label for="stormregion">Storm Region:</label>
+        <input type="select" name="stormregion">-->
         <label for="stormregion">Storm Region:</label>
-        <input type="select" name="stormregion">
+        <br>
+        <br>
+        <select name="stormregion">
+            <option selected="true" value="default" disabled>Select Region ...</option>
+            <option value="preston">Preston</option>
+            <option value="soda springs">Soda Springs</option>
+            <option value="fish haven">Fish Haven</option>
+        </select>
         <br>
         <br>
         <fieldset>
@@ -99,19 +108,6 @@
             <p>Additional information or comments:</p>
             <textarea rows="5" cols="30"></textarea>
         </div>
-        <div>
-                <form action="/action_page.php" id="carform">
-                    Firstname:<input type="text" name="fname">
-                    <input type="submit">
-                  </form>
-                  <br>
-                  <select name="planes" form="planeform">
-                    <option value="volvo">plane</option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
-                  </select>
-            </div>
         <!--<label for="choose">Submit Form</label>-->
         <br>
         <br>
@@ -126,6 +122,11 @@
     </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/rating.js"></script>
+    <script>
+        function myFunction() {
+            document.getElementById("emailid").placeholder = "Your email address";
+        }
+    </script>
 </body>
 
 
