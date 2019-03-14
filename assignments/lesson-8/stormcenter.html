@@ -40,7 +40,7 @@
     <form>
         <div class="formbox">
             <label for="full name">Full Name:</label>
-            <input type="text" name="full name">
+            <input type="text" name="full name" required>
             <br>
             <label for="full name">email:</label>
             <input type="email" name="emailaddress">
@@ -55,7 +55,14 @@
             <input type="date" name="stormdate">
             <br>
             <label for="stormtype">Storm Type:</label>
-            <input type="list" name="stormtype" required>
+            <input list="stormtype">
+            <datalist id="stormtype">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                  </datalist>
         </div>
         <br>
         <br>
@@ -69,7 +76,7 @@
         </fieldset>
         <br>
         <label for="stormregion">Storm Region:</label>
-        <input type="select" name="stormregion" required>
+        <input type="select" name="stormregion">
         <br>
         <br>
         <fieldset>
@@ -88,11 +95,11 @@
             </div>
         </fieldset>
         <br>
-        <div class ="textarea">
+        <div class="textarea">
             <p>Additional information or comments:</p>
-        <textarea rows="4" cols="30"></textarea>
-    </div>
-        <!--<div>
+            <textarea rows="5" cols="30"></textarea>
+        </div>
+        <div>
                 <form action="/action_page.php" id="carform">
                     Firstname:<input type="text" name="fname">
                     <input type="submit">
@@ -104,7 +111,7 @@
                     <option value="opel">Opel</option>
                     <option value="audi">Audi</option>
                   </select>
-            </div>-->
+            </div>
         <!--<label for="choose">Submit Form</label>-->
         <br>
         <br>
