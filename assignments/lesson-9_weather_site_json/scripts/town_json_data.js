@@ -35,6 +35,7 @@ request.onload = function () {
         myPara2.textContent = 'yearfounded: ' + idahotowns[i].yearFounded;
         myPara3.textContent = 'currentpopulation: ' + idahotowns[i].currentPopulation;
         myPara4.textContent = 'averagerainfall:' + idahotowns[i].averageRainfall;
+        //myImage.src ="images/townname.jpg";
         //myPara5.textContent = 'Events:' + towns[i].events; 
         //for future events data
 
