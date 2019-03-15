@@ -1,56 +1,53 @@
-
-//JSON retrieve information from URL.
+var section = document.querySelector("section");
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
+
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
-
 request.onload = function () {
     var townData = request.response;
     newTowns(townData);
-    //console.log(townData);
 }
 
     function newTowns(jsonObj) {
-    var idahotowns = jsonObj['towns'];
-    //console.log(idahotowns);
+         var idahotowns = jsonObj["towns"];
+
     for (var i = 0; i < idahotowns.length; i++) {
-        var article = document.createElement('article');
+    if (idahotowns[i].name == "Preston" || idahotowns[i].name == "Soda Springs" 
+    || idahotowns[i].name == "Fish Haven") { 
+    //console.log(idahotowns); view log in console.
+
+        var article = document.createElement("section");
         article.setAttribute("class", "idahoarticle"); /*Each article has the same class*/
-      //article.setAttribute("id", idahotowns[i].name + "article"); each article has a unique id.
-        var h2 = document.createElement('h2'); 
-        h2.textContent = idahotowns[i].name; //set h2 tag name to idahotowns
-        article.appendChild(h2);
+        //article.setAttribute("id", idahotowns[i].name + "article"); each article has a unique id.
 
-       // towns.name = 'Soda Springs';
-        //towns.name = 'Fish Haven';
-
-        //Preston, Soda Springs, Fish Haven.
+       //can be '' or "".
+        var myH2 = document.createElement('h2'); 
         var myPara1 = document.createElement('p');
         var myPara2 = document.createElement('p');
         var myPara3 = document.createElement('p');
         var myPara4 = document.createElement('p');
-        //var myPara5 = document.createElement('p');  events
+        //var myPara5 = document.createElement('p'); events data
 
+        myH2.textContent = idahotowns[i].name; //set h2 tag name to idahotowns
         myPara1.textContent = idahotowns[i].motto;
         myPara2.textContent = 'yearfounded: ' + idahotowns[i].yearFounded;
         myPara3.textContent = 'currentpopulation: ' + idahotowns[i].currentPopulation;
         myPara4.textContent = 'averagerainfall:' + idahotowns[i].averageRainfall;
+        //myPara5.textContent = 'Events:' + towns[i].events; 
+        //for future events data
 
-        //"name": "Preston",
-        //myPara5.textContent =  idahotowns[i].events;  events
-        //myPara5.textContent = 'Preston' + idahotowns[i].Preston;
-        //towns.name = "Preston" + idahotowns[i].motto;
-        //article.appendChild(towns.name);
-       
+        article.appendChild(myH2);
         article.appendChild(myPara1);
         article.appendChild(myPara2);
         article.appendChild(myPara3);
         article.appendChild(myPara4);
-        //article.appendChild(myPara5);  events
+        section.appendChild(article);
+        //myArticle.appendChild(myPara5); events data
 
-        document.getElementById('towndataid').appendChild(article);
+
+       // document.getElementById('towndataid').appendChild(article);
     }
-}
-        
+  }
+    }

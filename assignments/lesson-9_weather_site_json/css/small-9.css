@@ -72,9 +72,10 @@ main{
 
 
 /*--------FOOTER---------- */
- footer {
+
+#contact {
     text-align: center;
-    color: #ffffff;
+    color: #fff;
     width: 100%;
     margin: 1.25rem auto;
     padding: .5rem;
@@ -83,13 +84,13 @@ main{
 
 }
 
- footer a {
+#contact a {
     text-align: center;
-    color: #ffffff;
+    color: #fff;
     width: 100%;
  }
 
- /* ----------gallery-7----------*/
+ /* ----------GALLERY-7----------*/
  .column img{
      width: 100%;
  }
@@ -104,7 +105,7 @@ picture {
     color:#fff;
 }
 
-/*tablebuild.html*/
+/*--------------TABLEBUILD.html-------------*/
 
 /*html
 {font-family: 'Ubuntu', sans-serif;
@@ -170,7 +171,7 @@ tr:nth-child(even) {
     column-span: 3;
 }
 
-/*stormcenter.html*/
+/*--------------STORMCENTER FORM.html----------------*/
 
 .h1forum{
     color:white;
@@ -196,13 +197,16 @@ form label, input{
     font-size:3vw;
 }
 
-/*JSON*/
+/*---------------JSON---------------*/
+/*Both are being used*/
 #towndataid{
-    color:#fff;
+    color:orange;
     text-align:center;
     display:flex;
 }
 
 .idahoarticle{
-    
+    text-align:center;
+   color: #fff;
+   align-content: center;
 }
