@@ -98,6 +98,7 @@ main{
     padding: .5rem;
     max-width: 100%;
     align-content: center, bottom;
+    margin-top:30%;
 
 }
 
@@ -221,7 +222,16 @@ form label, input{
     text-align:center;
     display:flex;
     justify-content: center;
+    flex-wrap:content;
+    justify-content: space-around;
+    /*width:50%;*/
 }
+
+/*.idahoarticle5{
+    width:90%;
+    text-align:center;
+}*/
+
 /* Applies to all JSON article sections.
 .idahoarticle{
     text-align:center;

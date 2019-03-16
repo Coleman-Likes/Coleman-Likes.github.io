@@ -19,7 +19,7 @@ request.onload = function () {
     //console.log(idahotowns); view log in console.
 
         var article = document.createElement("section");
-        article.setAttribute("class", "idahoarticle"); /*Each article has the same class*/
+        article.setAttribute("class", "idahoarticle" + i); /*Each article has the same class*/
         //article.setAttribute("id", idahotowns[i].name + "article"); each article has a unique id.
 
        //can be '' or "".
