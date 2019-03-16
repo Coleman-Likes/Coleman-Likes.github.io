@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Weather website for Idaho">
+    <title>Idaho Weather Site</title>
+    <meta name="keywords" content="Preston weather, Preston Weather, Soda Springs Weather, Fish Haven Weather">
+    <meta name="author" content="Coleman Likes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/small-9.css">
+    <link rel="stylesheet" href="css/large-9.css">
+</head>
+
+<body>
+    <header>
+        <div class="headtitle">
+            <img class="sunlogo" src="images/yellow_sun_logo.png" alt="Logo of a yellow sun.">
+            <h1>The Idaho Weather Site</h1>
+        </div>
+        <div class="motto">
+            <h2>Your #1 Weather Site For Idaho</h2>
+            <!--Old motto<h2>Where the city meets the mountains</h2>-->
+        </div>
+
+    </header>
+
+    <main>
+        <div class="herodiv">
+
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston-10.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery-9.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <h3>Index</h3>
+        </div>
+    </main>
+
+    <section id="towndataid">
+    </section>
+
+    <footer id="contact">&copy; 2019 The Weather Site
+        <br>
+        Coleman Likes | crlikes@byui.edu
+        <br>
+        <br>
+        <span id="currentDate"></span>
+    </footer>
+    <script src="scripts/town_json_data.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+
+
+</html>
