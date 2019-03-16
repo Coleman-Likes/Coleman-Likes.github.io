@@ -1,3 +1,5 @@
+/*MOBILE*/
+
 body{
     background-color: #339BFF;    
     font-family: 'Open Sans', sans-serif, arial serif;
@@ -68,9 +70,11 @@ main{
  }
 
 .article-1 {
+    text-size-adjust: auto;
     text-align:justify;
     color:#fff;
     font-size:2vw;
+    font-size:2vh;
         }
 
 /* ------- NAV ------- */
