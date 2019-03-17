@@ -1,9 +1,14 @@
 //Convert variable into an integer
 //id span name is temp and speed.
 var temperature = parseInt(document.getElementById
+    ('cc-temp').innerHTML);
+var windspeed = parseInt(document.getElementById
+    ('cc-wind').innerHTML);
+
+    /*var temperature = parseInt(document.getElementById
     ('temp').innerHTML);
 var windspeed = parseInt(document.getElementById
-    ('speed').innerHTML);
+    ('speed').innerHTML);*/
 
 //Use fullname variable so it does not conflict.
 //Windchill calculation using variables

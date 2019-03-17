@@ -44,16 +44,25 @@
                 <img class="heroimage" src="images/hero-image.jpeg" alt="Hero Image of a sunny field.">
                 <section class="weathersummary">
                     <h3>Weather Summary</h3>
-                    <p>Currently: Cloudy</p>
+                    <p>Current Condition: </p>
                     <p>Current Temperature:
-                        <span id="temp">36</span>
-                        &#8457 <!--&#8457 is F degrees symbol-->
+
+                        <span id="cc-temp">
+                            </span>&deg; F
+                           <!-- <span id="temp">36</span>-->
+
+
+                         <!--&#8457 is F degrees symbol-->
+
                     </p>
                     <p>Wind Speed:
-                        <span id="speed">10</span>
+                        <span id="cc-wind"></span>
+                       <!--<span id="speed">10</span>-->
                         MPH
                     </p>
-                    <p>Humidity: 80%</p>
+                    <p>Humidity:   
+                            <span id="cc-hum"> %
+                  </p>
                     <hr>
                     <p>
                         Wind Chill:
@@ -91,6 +100,7 @@
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weatherapi.js"></script>
 </body>
 
 
