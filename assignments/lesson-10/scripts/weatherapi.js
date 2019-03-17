@@ -11,7 +11,7 @@ weatherRequest.onload =  function () {
 document.getElementById('cc-temp').innerHTML = weatherData.main.temp;
 document.getElementById('cc-hum').innerHTML = weatherData.main.humidity;
 document.getElementById('cc-wind').innerHTML = weatherData.wind.speed;
-
+//not being loaded.
 
 /*}*/
 
