@@ -222,7 +222,7 @@ form label, input{
 /*---------------JSON---------------*/
 /*Both are being used*/
 #towndataid{
-    color:#fff;
+    color: #fff;    
     text-align:center;
     display:flex;
     justify-content: center;
@@ -234,7 +234,11 @@ form label, input{
 .idahoarticle{
     width:20%;
     text-align:center;
-
+    border: solid;
+    border-width: thick;
+    border-color:yellow;
+    background-color:green;
+  
 }
 
 /* Applies to all JSON article sections.
