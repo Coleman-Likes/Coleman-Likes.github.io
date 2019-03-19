@@ -1,4 +1,4 @@
-var section = document.querySelector("section");
+var section = document.querySelector("article");
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
 
@@ -16,11 +16,10 @@ request.onload = function () {
     for (var i = 0; i < idahotowns.length; i++) {
     if (idahotowns[i].name == "Preston" || idahotowns[i].name == "Soda Springs" 
     || idahotowns[i].name == "Fish Haven") { 
-    //console.log(idahotowns); view log in console.
 
-        var article = document.createElement("section");
-        article.setAttribute("class", "idahoarticle" + i); /*Each article has the same class*/
-        //article.setAttribute("id", idahotowns[i].name + "article"); each article has a unique id.
+        var article = document.createElement("article");
+        article.setAttribute("class", "idahoarticle"); /*Each article has the same class*/
+        article.setAttribute("id", idahotowns[i].name + "article");
 
        //can be '' or "".
         var myH2 = document.createElement('h2'); 

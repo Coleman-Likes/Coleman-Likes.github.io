@@ -1,6 +1,5 @@
 let weatherRequest = new XMLHttpRequest();
 let apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=994243530e58e3e6625c83f042464c65';
-//not being loaded
 weatherRequest.open('Get', apiURLstring, true);
 weatherRequest.send();
 
@@ -9,17 +8,14 @@ weatherRequest.onload =  function () {
     console.log(weatherData);
 
 document.getElementById('cc-desc').innerHTML = weatherData.weather[0].description;
-document.getElementById('cc-temp').innerHTML = weatherData.main.temp;
 document.getElementById('cc-high').innerHTML = weatherData.main.temp_max;
 document.getElementById('cc-hum').innerHTML = weatherData.main.humidity;
 document.getElementById('cc-wind').innerHTML = weatherData.wind.speed;
-//not being loaded.
 
 name(parseInt(weatherData.main.temp), 
 parseInt(weatherData.wind.speed));
-/*}*/
 
-//let icon = "http://openweathermap.org/img/w/10d.png"
+
 let icon = "http://openweathermap.org/img/w/"
  + weatherData.weather[0].icon
 + ".png";
