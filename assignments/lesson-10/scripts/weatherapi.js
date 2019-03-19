@@ -8,11 +8,15 @@ weatherRequest.onload =  function () {
     let weatherData = JSON.parse(weatherRequest.responseText);
     console.log(weatherData);
 
+document.getElementById('cc-desc').innerHTML = weatherData.weather[0].description;
 document.getElementById('cc-temp').innerHTML = weatherData.main.temp;
+document.getElementById('cc-high').innerHTML = weatherData.main.temp_max;
 document.getElementById('cc-hum').innerHTML = weatherData.main.humidity;
 document.getElementById('cc-wind').innerHTML = weatherData.wind.speed;
 //not being loaded.
 
+name(parseInt(weatherData.main.temp), 
+parseInt(weatherData.wind.speed));
 /*}*/
 
 //let icon = "http://openweathermap.org/img/w/10d.png"

@@ -44,37 +44,39 @@
                 <img class="heroimage" src="images/hero-image.jpeg" alt="Hero Image of a sunny field.">
                 <section class="weathersummary">
                     <h3>Weather Summary</h3>
-                    <p>Current Condition: </p>
-                    <p>Current Temperature:
-
-                        <span id="cc-temp">
-                            </span>&deg; F
-                           <!-- <span id="temp">36</span>-->
-
-
-                         <!--&#8457 is F degrees symbol-->
-
+                    <p>Currently: 
+                        <span id="cc-desc"></span><img id="cc-img" src="" alt="">
+                    </p>
+                    <p>
+                        High:
+                        <span id="cc-high"></span>
+                        &#8457
                     </p>
                     <p>Wind Speed:
                         <span id="cc-wind"></span>
-                       <!--<span id="speed">10</span>-->
-                        MPH
+                        <!--<span id="speed">10</span>-->
+                        mph
                     </p>
-                    <p>Humidity:   
-                            <span id="cc-hum"> %
-                  </p>
-                    <hr>
+                    <p>Humidity:
+                        <span id="cc-hum"></span> %
+                    </p>
+                  <!--<hr>-->
                     <p>
                         Wind Chill:
-                        <span id="chillout"></span>
+                        <span id="cc-temp"></span> <!--current temp from main.temp-->
+                        <br>
+                        <span id="chillout"></span> <!--applies windchill-->
                         &#8457
                     </p>
-                    <hr>
-
+                    <!--<hr>-->
                 </section>
             </div>
     </main>
     <p class="weatherforecast">5 Day Forecast</p>
+
+    <!--<section id="towndataid">
+    </section>-->
+
     <article class="article-1">This is the news article.
         <br>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere volutpat leo non sollicitudin. Nulla
@@ -99,8 +101,9 @@
     </footer>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/windchill.js"></script>
     <script src="scripts/weatherapi.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <!--<script src="scripts/town_json_data.js"></script>-->
 </body>
 
 
