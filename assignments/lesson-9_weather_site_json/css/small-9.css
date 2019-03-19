@@ -231,10 +231,11 @@ form label, input{
     /*width:50%;*/
 }
 
-/*.idahoarticle5{
-    width:90%;
+.idahoarticle{
+    width:20%;
     text-align:center;
-}*/
+
+}
 
 /* Applies to all JSON article sections.
 .idahoarticle{
@@ -242,4 +243,3 @@ form label, input{
    color: #fff;
    align-content: center;
 }*/
-
