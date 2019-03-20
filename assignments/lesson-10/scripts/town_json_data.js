@@ -18,8 +18,11 @@ request.onload = function () {
     || idahotowns[i].name == "Fish Haven") { 
 
         var article = document.createElement("article");
+        var article2 = document.createElement("section");
+
         article.setAttribute("class", "idahoarticle"); /*Each article has the same class*/
         article.setAttribute("id", idahotowns[i].name + "article");
+
 
        //can be '' or "".
         var myH2 = document.createElement('h2'); 
@@ -34,20 +37,49 @@ request.onload = function () {
         myPara2.textContent = 'yearfounded: ' + idahotowns[i].yearFounded;
         myPara3.textContent = 'currentpopulation: ' + idahotowns[i].currentPopulation;
         myPara4.textContent = 'averagerainfall:' + idahotowns[i].averageRainfall;
+        
         //myImage.src ="images/town.jpg";
-        myPara5.textContent = 'Events:' + idahotowns[i].events; 
-        //for future events data
+        
+       /* myH2.textContent = idahotowns[i].name; //set h2 tag name to idahotowns
+        myPara1.textContent = idahotowns[i].motto;
+        myPara2.textContent = 'yearfounded: ' + idahotowns[i].yearFounded;
+        myPara3.textContent = 'currentpopulation: ' + idahotowns[i].currentPopulation;
+        myPara4.textContent = 'averagerainfall:' + idahotowns[i].averageRainfall;*/
+    
 
-        article.appendChild(myH2);
+
+        article.appendChild(myH2); //title
+        article.appendChild(myPara1);
+        article.appendChild(myPara2);
+        article.appendChild(myPara3);
+        article.appendChild(myPara4);
+        if(section != null) {
+          section.appendChild(article);
+          }
+
+        if (idahotowns[i].name == "Preston") {
+        myPara5.textContent = 'Events:' + idahotowns[i].events; 
+        article2.appendChild(myH2); //title
+        article2.appendChild(myPara1);
+        article2.appendChild(myPara2);
+        article2.appendChild(myPara3);
+        article2.appendChild(myPara4);//create events data
+        article2.appendChild(myPara5); //events data
+      
+        if(document.getElementById('newtown') != null) {
+        document.getElementById('newtown').appendChild(article2);
+      }
+      else {
+        article.appendChild(myH2); //title
         article.appendChild(myPara1);
         article.appendChild(myPara2);
         article.appendChild(myPara3);
         article.appendChild(myPara4);
         section.appendChild(article);
-        article.appendChild(myPara5); //events data
 
-
-       // document.getElementById('towndataid').appendChild(article);
+      }
+      
+    }   
     }
   }
     }
