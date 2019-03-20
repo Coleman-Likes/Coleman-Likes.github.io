@@ -27,15 +27,15 @@ request.onload = function () {
         var myPara2 = document.createElement('p');
         var myPara3 = document.createElement('p');
         var myPara4 = document.createElement('p');
-        //var myPara5 = document.createElement('p'); events data
+        var myPara5 = document.createElement('p'); //events data
 
         myH2.textContent = idahotowns[i].name; //set h2 tag name to idahotowns
         myPara1.textContent = idahotowns[i].motto;
         myPara2.textContent = 'yearfounded: ' + idahotowns[i].yearFounded;
         myPara3.textContent = 'currentpopulation: ' + idahotowns[i].currentPopulation;
         myPara4.textContent = 'averagerainfall:' + idahotowns[i].averageRainfall;
-        //myImage.src ="images/townname.jpg";
-        //myPara5.textContent = 'Events:' + towns[i].events; 
+        //myImage.src ="images/town.jpg";
+        myPara5.textContent = 'Events:' + idahotowns[i].events; 
         //for future events data
 
         article.appendChild(myH2);
@@ -44,7 +44,7 @@ request.onload = function () {
         article.appendChild(myPara3);
         article.appendChild(myPara4);
         section.appendChild(article);
-        //myArticle.appendChild(myPara5); events data
+        article.appendChild(myPara5); //events data
 
 
        // document.getElementById('towndataid').appendChild(article);
