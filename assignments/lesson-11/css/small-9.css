@@ -239,6 +239,19 @@ form label, input{
     border-color:yellow;
     background-color:green;
 }
+#newtown{
+text-align:center;
+}
+
+#newtown section{
+    width:20%;
+    border: solid;
+    border-width: thick;
+    border-color:yellow;
+    background-color:green;
+    margin:auto;
+
+}
 
 /* Applies to all JSON article sections.
 .idahoarticle{

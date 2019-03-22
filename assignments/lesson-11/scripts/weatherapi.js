@@ -21,6 +21,6 @@ let icon = "http://openweathermap.org/img/w/"
 + ".png";
 let desc = weatherData.weather[0].description;
 
-document.getElementById('cc-img').setAttribute('src', icon);
-document.getElementById('cc-img').setAttribute('alt', desc);
+//document.getElementById('cc-img').setAttribute('src', icon);
+//document.getElementById('cc-img').setAttribute('alt', desc);
 }
