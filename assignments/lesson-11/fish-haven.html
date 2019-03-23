@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Weather website for Preston, Idaho">
+    <title>Idaho Fish Haven Weather Site</title>
+    <meta name="keywords" content="Preston weather, Preston Idaho Weather">
+    <meta name="author" content="Coleman Likes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <div class="headtitle">
+            <img class="sunlogo" src="images/yellow_sun_logo.png" alt="Logo of a yellow sun.">
+            <h1>Fish Haven Idaho Weather</h1>
+        </div>
+        <div class="motto">
+            <h2>A haven for fish at Bear Lake</h2>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="herodiv">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a href="soda-springs.html">Soda Springs</a></li>
+                    <li><a href="fish-haven.html">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <h3>Fish Haven Idaho</h3>
+        </div>
+        <div class="hero-ph">
+            <img class="heroimage" src="images/hero-image.jpeg" alt="Hero Image of a sunny field.">
+            <section class="weathersummary">
+                <h3>Weather Summary</h3>
+                <p>Currently:
+                    <span id="cc-desc"></span>
+                    <!--<img id="cc-img" src="" alt="">-->
+                </p>
+                <p>
+                    High:
+                    <span id="cc-high"></span>
+                    &#8457
+                </p>
+                <p>Wind Speed:
+                    <span id="cc-wind"></span>
+                    mph
+                </p>
+                <p>Humidity:
+                    <span id="cc-hum"></span>%
+                </p>
+                <!--<hr>-->
+                <p>
+                    Wind Chill:
+                    <span id="chillout"></span> &#8457
+                </p>
+                <!--<hr>-->
+            </section>
+        </div>
+
+        <h4 class="h4forecast">5 Day Forecast</h4>
+        <div class="divforecast">
+            <div id="forecast1">
+                <p class="forecastheader">Day 1</p>
+                <p id="day1"></p>
+                <img id="cc-img1" src="https://openweathermap.org/img/w/13d.png"
+                    alt="Displays image of weather icon for the day.">
+            </div>
+            <div id="forecast2">
+                <p class="forecastheader">Day 2</p>
+                <p id="day2"></p>
+                <img id="cc-img2" src="https://openweathermap.org/img/w/13d.png"
+                    alt="Displays image of weather icon for the day.">
+            </div>
+            <div id="forecast3">
+                <p class="forecastheader">Day 3</p>
+                <p id="day3"></p>
+                <img id="cc-img3" src="https://openweathermap.org/img/w/13d.png"
+                    alt="Displays image of weather icon for the day.">
+            </div>
+            <div id="forecast4">
+                <p class="forecastheader">Day 4</p>
+                <p id="day4"></p>
+                <img id="cc-img4" src="https://openweathermap.org/img/w/13d.png"
+                    alt="Displays image of weather icon for the day.">
+            </div>
+            <div id="forecast5">
+                <p class="forecastheader">Day 5</p>
+                <p id="day5">Day 5</p>
+                <img id="cc-img5" src="https://openweathermap.org/img/w/13d.png"
+                    alt="Displays image of weather icon for the day.">
+            </div>
+        </div>
+        <br>
+        <div id="newtown">
+        </div>
+
+        <section class="article-1">
+            <br>
+            <br>
+            Preston Idaho News for spring of 2019.
+            <br>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+            rem aperiam,
+            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
+            enim ipsam
+            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+            ratione
+            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+            adipisci
+            velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+            voluptatem. Ut
+            enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid
+            ex ea commodi
+            consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+            molestiae consequatur, vel illum qui dolorem eum fugiat quo.
+        </section>
+    </main>
+    <footer id="contact">Coleman Likes | crlikes@byui.edu
+        <br>
+        <br>
+        <span id="currentDate"></span>
+        | <a href="https://openweathermap.org/">openweathermap.org</a>
+    </footer>
+
+</body>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/fishhaven_weatherapi.js"></script>
+<script src="scripts/fishhaven_forecast.js"></script>
+<script src="scripts/windchill.js"></script>
+<script src="scripts/town_json_data.js"></script>
+
+</html>
