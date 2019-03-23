@@ -50,6 +50,28 @@ h3 {
     /* margin-left: 80px;*/
  }
 
+ .divforecast{
+    /*display: grid;
+    width: 90%;
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+    grid-gap: 10px;*/
+    display: grid;
+    color:black;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    border: solid;
+    border-width: thick;
+    border-color:red;
+    background-color:yellow;
+}
+.divforecast div{
+    color:white;
+}
+
 main{
     clear:both;
 }

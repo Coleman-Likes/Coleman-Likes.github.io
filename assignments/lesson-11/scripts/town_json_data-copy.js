@@ -59,11 +59,11 @@ request.onload = function () {
 
         if (idahotowns[i].name == "Preston") {
         myPara5.textContent = 'Events:' + idahotowns[i].events; 
-        //article2.appendChild(myH2); //title
-       // article2.appendChild(myPara1);
-       // article2.appendChild(myPara2);
-       // article2.appendChild(myPara3);
-       // article2.appendChild(myPara4);//create events data
+        article2.appendChild(myH2); //title
+        article2.appendChild(myPara1);
+        article2.appendChild(myPara2);
+        article2.appendChild(myPara3);
+        article2.appendChild(myPara4);//create events data
         article2.appendChild(myPara5); //events data
       
         if(document.getElementById('newtown') != null) {
@@ -71,11 +71,12 @@ request.onload = function () {
       }
       else {
         article.appendChild(myH2); //title
-       // article.appendChild(myPara1);
-       // article.appendChild(myPara2);
-       // article.appendChild(myPara3);
-        //article.appendChild(myPara4);
+        article.appendChild(myPara1);
+        article.appendChild(myPara2);
+        article.appendChild(myPara3);
+        article.appendChild(myPara4);
         section.appendChild(article);
+
       }
       
     }   

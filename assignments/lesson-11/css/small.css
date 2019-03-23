@@ -81,10 +81,10 @@ text-align:center;
     font-size:2vw;
     font-size:2vh;
         }
-        .mapimage{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+ .mapimage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
         }
 
 /* ------- NAV ------- */
@@ -93,7 +93,21 @@ text-align:center;
   .navigation li:first-child { display: block;}
   .navigation li { display: none;}
   .navigation a {	display: block;	color: #fff; padding: .75rem;	text-align: center;	text-decoration: none;}
-  .navigation a:hover {	color: #fff; background-color: #000; font-weight: 700;	}
+  .navigation a:hover {	color: #fff; background-color: grey; font-weight: 700;	}
+
+  .navbar a {	
+    display: block;	
+    color: #58595B; 
+    text-align: center;	
+    text-decoration: none;}
+
+    .navbar a:hover { 
+    color: #F0EDE3; 
+    background-color: #555555; 
+    font-weight: 700;	
+}
+
+.responsive li { display: block; }
 
 /* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
   <ul class="navigation responsive">
@@ -102,22 +116,7 @@ text-align:center;
 .responsive li { display: block; }
 
 /*--------5 Day Forecast-----*/
-.divforecast{
-    /*display: grid;
-    width: 90%;
-    grid-template-rows: 1fr;
-    margin: 0 auto;
-    grid-gap: 10px;*/
-    display: grid;
-    justify-content: space-around;
-    grid-template-columns: auto auto auto auto auto;
-    grid-gap: 10px;
-    background-color: #2196F3;
-    padding: 10px;
-    border: solid;
-    border-width: thick;
-    border-color:red;
-}
+
 .forecast1{
     color:black;
 }
@@ -155,6 +154,10 @@ text-align:center;
 }
 picture {
     color:#fff;
+}
+
+.divforecast{
+    display:none;
 }
 
 /*--------------TABLEBUILD.html-------------*/
