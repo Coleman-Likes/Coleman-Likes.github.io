@@ -65,8 +65,8 @@ h3 {
     padding: 10px;
     border: solid;
     border-width: thick;
-    border-color:red;
-    background-color:yellow;
+    border-color:yellow;
+    background-color:green;
 }
 .divforecast div{
     color:white;

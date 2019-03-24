@@ -42,6 +42,7 @@ header h1{
 h3 {
     text-align: center;
     font-size: 3vw;
+    text-size-adjust:auto;
 }
 
 /*----------BODY--------------*/
@@ -73,6 +74,20 @@ main{
  .h4forecast{ 
 text-align:center;
  }
+ .weathersummary {
+    position: absolute;
+    top: 250px;
+   /* top: 1rem;*/
+    left: 50px;
+    margin-bottom:5px;
+    background: radial-gradient(blue, lightblue);
+    border: 1px solid blue;
+    padding: .5rem;
+    box-shadow: 0 0 30px gray;
+    /*dynamically change element box size depending on other elements. 
+    Have it push down the navigation bar element*/
+    /*top: 10px;*/
+}
 
 .article-1 {
     text-size-adjust: auto;
@@ -95,17 +110,7 @@ text-align:center;
   .navigation a {	display: block;	color: #fff; padding: .75rem;	text-align: center;	text-decoration: none;}
   .navigation a:hover {	color: #fff; background-color: grey; font-weight: 700;	}
 
-  .navbar a {	
-    display: block;	
-    color: #58595B; 
-    text-align: center;	
-    text-decoration: none;}
 
-    .navbar a:hover { 
-    color: #F0EDE3; 
-    background-color: #555555; 
-    font-weight: 700;	
-}
 
 .responsive li { display: block; }
 
@@ -150,7 +155,7 @@ text-align:center;
     width: 90%;
     grid-template-columns: 1fr;
     margin: 0 auto;
-    grid-gap: 10px;
+    grid-gap: 15px;
 }
 picture {
     color:#fff;
@@ -238,10 +243,12 @@ form{
     margin-left: 10px;
 }
 .formbox{
-    justify-content:center;
     display:flex;
     flex-direction: column;
+   /* align-items:center; to make the input box smaller, looks nice*/
     max-width: 25%;
+    text-align:center;
+
     /*justify-content: flex-end; Moves content to right side*/
 }
 form label, input{
