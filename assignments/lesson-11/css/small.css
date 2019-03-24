@@ -261,7 +261,6 @@ form{
     flex-direction: column;
    /* align-items:center; to make the input box smaller, looks nice*/
     max-width: 25%;
-    text-align:center;
 
     /*justify-content: flex-end; Moves content to right side*/
 }
