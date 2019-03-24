@@ -1,5 +1,4 @@
 /*MOBILE*/
-
 body{
     background-color: #339BFF;    
     font-family: 'Open Sans', sans-serif, arial serif;
@@ -57,6 +56,7 @@ h3 {
 {
     width: 100vw;
     height:auto;
+    margin-top:0vw;
    /* max-width: 100%;*/
 }
 
@@ -74,6 +74,9 @@ main{
  /*This is H4*/
  .h4forecast{ 
 text-align:center;
+font-size:3vw;
+margin-bottom:2vw;
+
  }
  .weathersummary {
     position: absolute;
@@ -89,8 +92,17 @@ text-align:center;
     Have it push down the navigation bar element*/
     /*top: 10px;*/
 }
+#h5events{
+    font-size:2vw;
+    margin-bottom:2vw;
 
+}
+#h6article{
+    font-size:1.4em;
+    margin-bottom:2vw;
+}
 .article-1 {
+    width:auto;
     text-size-adjust: auto;
     text-align:justify;
     color:#fff;
@@ -101,6 +113,7 @@ text-align:center;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top:2vw;
         }
 
 /* ------- NAV ------- */

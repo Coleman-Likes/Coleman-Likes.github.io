@@ -8,6 +8,7 @@ request.send();
 request.onload = function () {
     var townData = request.response;
     newTowns(townData);
+    
 }
 
     function newTowns(jsonObj) {
@@ -59,6 +60,7 @@ request.onload = function () {
 
         if (idahotowns[i].name == "Preston") {
         myPara5.textContent = 'Events:' + idahotowns[i].events; 
+        
         //article2.appendChild(myH2); //title
        // article2.appendChild(myPara1);
        // article2.appendChild(myPara2);
@@ -70,15 +72,26 @@ request.onload = function () {
         document.getElementById('newtown').appendChild(article2);
       }
       else {
-        article.appendChild(myH2); //title
+        //article.appendChild(myH2); //title
        // article.appendChild(myPara1);
        // article.appendChild(myPara2);
        // article.appendChild(myPara3);
         //article.appendChild(myPara4);
         section.appendChild(article);
       }
-      
+
+      /*soda springs*/
+      if (idahotowns[i].name == "Soda Springs") {
+        myPara5.textContent = 'Events:' + idahotowns[i].events; 
+        article2.appendChild(myPara5); //events data
+
+        if(document.getElementById('sodatown') != null) {
+          document.getElementById('sodatown').appendChild(article2);
+        }
+        else {
+          section.appendChild(article);
+
     }   
     }
   }
-    }
+    }}}
