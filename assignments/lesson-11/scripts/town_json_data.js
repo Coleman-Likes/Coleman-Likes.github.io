@@ -18,7 +18,6 @@ function newTowns(jsonObj) {
       || idahotowns[i].name == "Fish Haven") {
 
       var article = document.createElement("article");
-
       article.setAttribute("class", "idahoarticle");
       article.setAttribute("id", idahotowns[i].name + "article");
 
@@ -39,18 +38,17 @@ function newTowns(jsonObj) {
         myImages.setAttribute('src', 'images/preston-image.jpg');
         myImages.setAttribute('alt', 'Preston Idaho Town Image');
         myImages.setAttribute('class', 'prestontownimg');
-    }
-    else if (idahotowns[i].name == 'Soda Springs') {
-      myImages.setAttribute('src', 'images/sodasprings-image.jpg');
-      myImages.setAttribute('alt', 'Soda Springs Town Image');
-      myImages.setAttribute('class', 'sodatownimg');
-  }
-  else if (idahotowns[i].name == 'Fish Haven') {
-    myImages.setAttribute('src', 'images/fishhaven-image.jpg');
-    myImages.setAttribute('alt', 'Fish Haven Town Image');
-    myImages.setAttribute('class', 'fishtownimg');
-}
-
+      }
+      else if (idahotowns[i].name == 'Soda Springs') {
+        myImages.setAttribute('src', 'images/sodasprings-image.jpg');
+        myImages.setAttribute('alt', 'Soda Springs Town Image');
+        myImages.setAttribute('class', 'sodatownimg');
+      }
+      else if (idahotowns[i].name == 'Fish Haven') {
+        myImages.setAttribute('src', 'images/fishhaven-image.jpg');
+        myImages.setAttribute('alt', 'Fish Haven Town Image');
+        myImages.setAttribute('class', 'fishtownimg');
+      }
       article.appendChild(myH2);
       article.appendChild(myPara1);
       article.appendChild(myPara2);
