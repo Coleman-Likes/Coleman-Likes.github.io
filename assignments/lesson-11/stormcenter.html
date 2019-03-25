@@ -46,22 +46,22 @@
     <form>
         <div class="formbox">
             <label for="fullname">Full Name:</label>
-            <input type="text" name="full name" required>
+            <input type="text" name="full name" id="fullname" required>
             <br>
             <label for="email">email:</label>
-            <input type="email" id="emailid" name="emailaddress" placeholder="johndoe@gmail.com">
+            <input type="email" id="emailid" name="emailaddress" id="email" placeholder="johndoe@gmail.com">
             <br>
             <label for="phonenumber">Phone Number:</label>
-            <input type="tel" name="phonenumber" required>
+            <input type="tel" name="phonenumber" id="phonenumber" required>
             <br>
             <label for="zipcode">Zip Code:</label>
-            <input type="number" name="zipcode" required>
+            <input type="number" name="zipcode" id="zipcode" required>
             <br>
             <label for="stormdate">Storm Date:</label>
-            <input type="date" name="stormdate">
+            <input type="date" name="stormdate" id="stormdate">
             <br>
             <label for="stormtype">Storm Type:</label>
-            <input list="stormtype">
+            <input list="stormtype" id="stormtype">
             <datalist id="stormtype">
                 <option value="Flash Flood">
                 <option value="Hail">
@@ -84,11 +84,11 @@
         <label for="stormregion">Storm Region:</label>
         <br>
         <br>
-        <select name="stormregion">
-            <option selected="true" value="default" disabled>Select Region ...</option>
+        <select name="stormregion" id="stormregion">
+            <option selected="selected" value="radio" disabled>Select Region ...</option>
             <option value="preston">Preston</option>
-            <option value="soda springs">Soda Springs</option>
-            <option value="fish haven">Fish Haven</option>
+            <option value="sodasprings">Soda Springs</option>
+            <option value="fishhaven">Fish Haven</option>
         </select>
         <br>
         <br>
