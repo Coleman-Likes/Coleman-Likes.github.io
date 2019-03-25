@@ -46,24 +46,24 @@ h3 {
 }
 
 /*----------BODY--------------*/
-
 .motto h2 {
     font-size: 2.5vw;
     font-style: italic;
 }
-
 .heroimage
 {
-    width: 100vw;
+    width: 100%;
     height:auto;
     margin-top:0vw;
    /* max-width: 100%;*/
 }
-
+.hero-ph img:hover{
+    box-shadow: 5px 5px 5px rgba(24, 23, 23, 0.8);
+    transition: box-shadow 0.5s ease-in-out;
+}
 main{
     clear:both;
 }
-
  main {
     color: white;
     margin: 1.25rem auto;
@@ -165,10 +165,16 @@ margin-bottom:2vw;
  /* ----------GALLERY-7----------*/
  .column img{
      width: 100%;
+     height:auto;
  }
+ .column img:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    transition: box-shadow 0.3s ease-in-out;
+  }
  .column {
     display: grid;
-    width: 90%;
+    width: 95%;
+    height:auto;
     grid-template-columns: 1fr;
     margin: 0 auto;
     grid-gap: 15px;
@@ -291,6 +297,22 @@ form label, input{
     border-color:yellow;
     background-color:green;
 }
+.prestontownimg{
+    width:100%;
+    height:auto;
+}
+.sodatownimg{
+    width:100%;
+    height:auto;
+}
+.fishtownimg{
+    width:100%;
+    height:auto;
+}
+/*
+ .column img:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    transition: box-shadow 0.3s ease-in-out;*/
 #newtown{
 text-align:center;
 }
@@ -302,7 +324,6 @@ text-align:center;
     border-color:yellow;
     background-color:green;
     margin:auto;
-
 }
 
 /* Applies to all JSON article sections.

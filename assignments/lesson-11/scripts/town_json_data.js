@@ -18,7 +18,6 @@ function newTowns(jsonObj) {
       || idahotowns[i].name == "Fish Haven") {
 
       var article = document.createElement("article");
-      var article2 = document.createElement("section");
 
       article.setAttribute("class", "idahoarticle");
       article.setAttribute("id", idahotowns[i].name + "article");
@@ -28,7 +27,7 @@ function newTowns(jsonObj) {
       var myPara2 = document.createElement('p');
       var myPara3 = document.createElement('p');
       var myPara4 = document.createElement('p');
-      var myPara5 = document.createElement('p');
+      var myImages = document.createElement('img');
 
       myH2.textContent = idahotowns[i].name;
       myPara1.textContent = idahotowns[i].motto;
@@ -36,27 +35,29 @@ function newTowns(jsonObj) {
       myPara3.textContent = 'currentpopulation: ' + idahotowns[i].currentPopulation;
       myPara4.textContent = 'averagerainfall:' + idahotowns[i].averageRainfall;
 
+      if (idahotowns[i].name == 'Preston') {
+        myImages.setAttribute('src', 'images/preston-image.jpg');
+        myImages.setAttribute('alt', 'Preston Idaho Town Image');
+        myImages.setAttribute('class', 'prestontownimg');
+    }
+    else if (idahotowns[i].name == 'Soda Springs') {
+      myImages.setAttribute('src', 'images/sodasprings-image.jpg');
+      myImages.setAttribute('alt', 'Soda Springs Town Image');
+      myImages.setAttribute('class', 'sodatownimg');
+  }
+  else if (idahotowns[i].name == 'Fish Haven') {
+    myImages.setAttribute('src', 'images/fishhaven-image.jpg');
+    myImages.setAttribute('alt', 'Fish Haven Town Image');
+    myImages.setAttribute('class', 'fishtownimg');
+}
+
       article.appendChild(myH2);
       article.appendChild(myPara1);
       article.appendChild(myPara2);
       article.appendChild(myPara3);
       article.appendChild(myPara4);
-      if (section != null) {
-        section.appendChild(article);
-      }
-
-      if (idahotowns[i].name == "Preston") {
-        myPara5.textContent = 'Events:' + idahotowns[i].events;
-
-        article2.appendChild(myPara5);
-
-        if (document.getElementById('newtown') != null) {
-          document.getElementById('newtown').appendChild(article2);
-        }
-        else {
-          section.appendChild(article);
-        }
-      }
+      article.appendChild(myImages);
+      section.appendChild(article);
     }
   }
 }

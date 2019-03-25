@@ -46,7 +46,7 @@ function newTowns(jsonObj) {
                 section.appendChild(article);
             }
 
-            if (idahotowns[i].name == "Fish Haven") {
+            if (idahotowns[i].name == "Preston") {
                 myPara5.textContent = 'Events:' + idahotowns[i].events;
                 article2.appendChild(myPara5);
 
