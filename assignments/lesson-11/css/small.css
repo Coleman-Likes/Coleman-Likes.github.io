@@ -123,7 +123,9 @@ margin-bottom:2vw;
   .navigation li { display: none;}
   .navigation a {	display: block;	color: #fff; padding: .75rem;	text-align: center;	text-decoration: none;}
   .navigation a:hover {	color: #fff; background-color: grey; font-weight: 700;	}
-
+  .navigation .active {
+    background-color: green;
+}
 
 
 .responsive li { display: block; }
