@@ -41,18 +41,19 @@ function newTowns(jsonObj) {
       article.appendChild(myPara2);
       article.appendChild(myPara3);
       article.appendChild(myPara4);
+
       if (section != null) {
         section.appendChild(article);
       }
 
-      if (idahotowns[i].name == "Preston") {
+      if (idahotowns[i].name == "Soda Springs") {
         myPara5.textContent = 'Events:' + idahotowns[i].events;
-
         article2.appendChild(myPara5);
 
         if (document.getElementById('newtown') != null) {
           document.getElementById('newtown').appendChild(article2);
         }
+
         else {
           section.appendChild(article);
         }
