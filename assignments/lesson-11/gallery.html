@@ -13,10 +13,11 @@
 </head>
 <header>
     <div class="headtitle">
-            <div class="divsunlogo">
-                    <a href="index.html">
-                        <img class="sunlogo" src="images/yellow_sun_logo.png" alt="Logo of a yellow sun."></a>
-                </div>        <h1>The Idaho Weather Site</h1>
+        <div class="divsunlogo">
+            <a href="index.html">
+                <img class="sunlogo" src="images/yellow_sun_logo.png" alt="Logo of a yellow sun."></a>
+        </div>
+        <h1>The Idaho Weather Site</h1>
     </div>
     <div class="motto">
         <h2>Your #1 Weather Site For Idaho</h2>
@@ -25,61 +26,58 @@
 </header>
 
 <body>
-    <nav>
-        <ul class="navigation">
-            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="preston.html">Preston</a></li>
-            <li><a href="soda-springs.html">Soda Springs</a></li>
-            <li><a href="fish-haven.html">Fish Haven</a></li>
-            <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-    </nav>
-    <h3>Gallery</h3>
-    <div class="column">
-
-        <picture>
-            <img src="images/1-slightly-cloudy.jpg" alt="Slightly cloudy sky">
-            A partly cloudy day in spring.
-        </picture>
-
-        <picture>
-            <img src="images/2-storm-rising-over-field.jpg" alt="Storm over a field">
-            A spring storm rising over a field in Preston.
-        </picture>
-
-        <picture>
-            <img src="images/3-after-snowstorm.jpg" alt="Park after a snowstorm">
-            A wonderful snowstorm on Christmas Eve.
-        </picture>
-
-        <picture>
-            <img src="images/4-springshowers.jpg" alt="Spring rainstorm">
-            Spring showers at Preston park.
-        </picture>
-
-        <picture>
-            <img src="images/5-lightning-strike.jpg" alt="Lightning strikes near a mountain">
-            A summer lightning storm near Preston.
-        </picture>
-
-        <picture>
-            <img src="images/6-rainbow-forms.jpg" alt="U-shaped rainbow">
-            A beautiful u-shaped rainbow forms over a field in autumn.
-        </picture>
-
-    </div>
     <main>
 
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="soda-springs.html">Soda Springs</a></li>
+                <li><a href="fish-haven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <h3>Gallery</h3>
+        <div class="column">
+            <div>
+                <img src="images/1-slightly-cloudy.jpg" alt="Slightly cloudy sky">A partly cloudy day in spring.
+            </div>
+
+            <div>
+                <img src="images/2-storm-rising-over-field.jpg" alt="Storm over a field">
+                A spring storm rising over a field in Preston.
+            </div>
+
+            <div>
+                <img src="images/3-after-snowstorm.jpg" alt="Park after a snowstorm">
+                A wonderful snowstorm on Christmas Eve.
+            </div>
+
+            <div>
+                <img src="images/4-springshowers.jpg" alt="Spring rainstorm">
+                Spring showers at Preston park.
+            </div>
+
+            <div>
+                <img src="images/5-lightning-strike.jpg" alt="Lightning strikes near a mountain">
+                A summer lightning storm near Preston.
+            </div>
+
+            <div>
+                <img src="images/6-rainbow-forms.jpg" alt="U-shaped rainbow">
+                A beautiful u-shaped rainbow forms over a field in autumn.
+            </div>
+        </div>
     </main>
+    <footer id="contact">Coleman Likes | crlikes@byui.edu
+        <br>
+        <br>
+        <span id="currentDate"></span>
+        <script src="scripts/currentdate.js"></script>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
 </body>
-<footer id="contact">Coleman Likes | crlikes@byui.edu
-    <br>
-    <br>
-    <span id="currentDate"></span>
-    <script src="scripts/currentdate.js"></script>
-</footer>
-<script src="scripts/hamburger.js"></script>
 
 </html>

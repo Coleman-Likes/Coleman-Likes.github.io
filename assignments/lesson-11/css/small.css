@@ -170,11 +170,8 @@ margin-bottom:2vw;
     grid-template-columns: 1fr;
     margin: 0 auto;
     grid-gap: 15px;
-}
-picture {
     color:#fff;
 }
-
 .divforecast{
     display:none;
 }
