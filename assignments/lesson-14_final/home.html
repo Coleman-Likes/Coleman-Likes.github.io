@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Reserve your stay at Temple Inns & Suites. 
+    There are four Temple Inn & Suites locations with each site close to a temple.">
+    <title>The Temple Inn & Suites Home Page</title>
+    <meta name="keywords" content="Temple Inn & Suites, Temple Hotel">
+    <meta name="author" content="Coleman Likes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <div class="headtitle">
+            <div class="divtemplelogo">
+                <a href="index.html">
+                    <img class="templelogo" src="images/templelogo.jpg" alt="Logo of a yellow sun."></a>
+            </div>
+            <h1>The Temple Inn & Suites</h1>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="herodiv">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a class="active" href="home.html">Home</a></li>
+                    <li><a href="temple.html">Temple</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <br>
+        <a id="reservenow" href="reservation.html">Plan your reservation now!</a>
+
+        <br>
+        <section class="onetemplesection">
+            <h1 section="h1temple">St. George, Utah Temple.
+            </h1>
+            <img id="stgeorgetemple" src="images/st-george-temple.jpg" alt="A photo of the St. George Temple.">
+            <p id="stgeorgefacts">The St. George Utah Temple is a temple of The Church of
+                Jesus Christ of Latter-day Saints. It was the first temple built in
+                Utah when the pioneers migrated west. It was completed in 1877 and
+                is the oldest active temple in use today. The temple currently has
+                three ordinance rooms and 18 sealing rooms.
+            </p>
+        </section>
+        <section class="threetemplesection">
+            <!--<h1 section="h1temple">Salt Lake Temple</h1>-->
+            <img id="templephoto" src="images/salt-lake-temple.jpg" alt="A photo of the Salt Lake Temple.">
+            <img id="templephoto" src="images/los-angeles-temple.jpg" alt="A photo of the Los Angeles Temple.">
+            <img id="templephoto" src="images/phoenix-temple.jpg" alt="A photo of the Phoenix Temple.">
+        </section>
+        <br>
+    </main>
+    <footer id="contact">Coleman Likes | crlikes@byui.edu
+        <br>
+        <br>
+        <a href="https://openweathermap.org/">openweathermap.org</a> |
+        <a href="https://cssminifier.com/">cssminifier.com</a>
+        <br>
+        <br>
+        <span id="currentDate"></span>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <!--
+    <script src="scripts/preston_weatherapi.js"></script>
+    <script src="scripts/preston_forecast.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/preston_events.js"></script>-->
+</body>
+
+</html>

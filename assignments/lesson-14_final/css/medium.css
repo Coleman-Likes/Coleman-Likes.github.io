@@ -1,0 +1,13 @@
+@media only screen and (min-width: 800px) {
+    div.fullwidth {
+    width: 100%;
+    width: 100vw; /*added this*/
+    }
+
+
+
+
+    .navigation li:first-child { display: none;	}
+	.navigation li { display: inline-block; margin-right: 1rem;}	
+    .navigation li a { color: white;}
+}
