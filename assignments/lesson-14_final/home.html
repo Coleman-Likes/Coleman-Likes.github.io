@@ -22,7 +22,7 @@
                 <a href="index.html">
                     <img class="templelogo" src="images/templelogo.jpg" alt="Logo of a yellow sun."></a>
             </div>
-            <h1>The Temple Inn & Suites</h1>
+            <h1 class="h1title">The Temple Inn & Suites</h1>
         </div>
 
     </header>
@@ -45,7 +45,7 @@
 
         <br>
         <section class="onetemplesection">
-            <h1 section="h1temple">St. George, Utah Temple.
+            <h1 id="h1temple">St. George, Utah Temple.
             </h1>
             <img id="stgeorgetemple" src="images/st-george-temple.jpg" alt="A photo of the St. George Temple.">
             <p id="stgeorgefacts">The St. George Utah Temple is a temple of The Church of
@@ -55,13 +55,26 @@
                 three ordinance rooms and 18 sealing rooms.
             </p>
         </section>
+        <br>
         <section class="threetemplesection">
             <!--<h1 section="h1temple">Salt Lake Temple</h1>-->
-            <img id="templephoto" src="images/salt-lake-temple.jpg" alt="A photo of the Salt Lake Temple.">
-            <img id="templephoto" src="images/los-angeles-temple.jpg" alt="A photo of the Los Angeles Temple.">
-            <img id="templephoto" src="images/phoenix-temple.jpg" alt="A photo of the Phoenix Temple.">
+            <div class="hometemple">
+                <picture>
+                    <img id="templephoto" src="images/salt-lake-temple.jpg" alt="A photo of the Salt Lake Temple.">
+                    <p class="templedesc">Salt Lake Temple</p>
+                </picture>
+                <picture>
+                    <img id="templephoto" src="images/los-angeles-temple.jpg" alt="A photo of the Los Angeles Temple.">
+                    <p class="templedesc">Los Angeles Temple</p>
+                </picture>
+                <picture>
+                    <img id="templephoto" src="images/phoenix-temple.jpg" alt="A photo of the Phoenix Temple.">
+                    <p class="templedesc">Phoenix Temple</p>
+                </picture>
+            </div>
         </section>
         <br>
+
     </main>
     <footer id="contact">Coleman Likes | crlikes@byui.edu
         <br>
@@ -71,14 +84,14 @@
         <br>
         <br>
         <span id="currentDate"></span>
+        <br>
+        <br>
+        <a href="resources.html">Resources</a>
+        <br>
+        <br>
     </footer>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <!--
-    <script src="scripts/preston_weatherapi.js"></script>
-    <script src="scripts/preston_forecast.js"></script>
-    <script src="scripts/windchill.js"></script>
-    <script src="scripts/preston_events.js"></script>-->
 </body>
 
 </html>

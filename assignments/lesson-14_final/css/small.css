@@ -1,8 +1,6 @@
 /*MOBILE*/
 @import url('https://fonts.googleapis.com/css?family=Roboto|Work+Sans');
-
 /*@media only screen and (max-width: 700px) {*/
-
 /*}*/
 /* navigation bar */
 /*
@@ -48,22 +46,28 @@ display:flex;
 align-items:flex-start;*/
 max-width: 10vw;
 margin-left: 2vw;
-margin-bottom:3vw auto;
+margin-bottom: 1em;
 height:auto;
 float: left;
 
 }
 
 /* -------H TAGS------*/
-header h1{
-    font-size: 5vw;
+/*header h1{
+    font-size: 4vw;
+}*/
+.h1title{
+    color:#fff;
+    font-size:5em;
+    padding-top:.2em;
 }
 h2 {
     text-align: center;
+    font-size:2em;
 }
 h3 {
     text-align: center;
-    font-size: 3vw;
+    font-size: 1.5em;
     text-size-adjust:auto;
 }
 
@@ -72,14 +76,7 @@ h3 {
     font-size: 2.5vw;
     font-style: italic;
 }
-.heroimage
-{
-    width: 100%;
-    height:auto;
-    margin-top:0vw;
-   /* max-width: 100%;*/
-}
-.hero-ph img:hover{
+.div-temple img:hover{
     box-shadow: 5px 5px 5px rgba(24, 23, 23, 0.8);
     transition: box-shadow 0.5s ease-in-out;
 }
@@ -92,9 +89,13 @@ main{
     /*padding: .5rem;*/
     max-width: 100%;
  }
+
+ /* Home */
  #reservenow{
-     align-content:center;
      color:white;
+     text-align:center;
+     display:block;
+     font-size:2em;
  }
 
 
@@ -103,14 +104,16 @@ main{
     margin-bottom:2vw;
 
 }
-.h1temple{
-    font-size:1.4em;
+#h1temple{
+    font-size:2em;
     margin-bottom:2vw;
     text-align:center;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width:50%;
+}
+
+.templeinfo{
+    display:block;
+    text-align:center;
 }
 .onetemplesection {
     width:auto;
@@ -139,14 +142,28 @@ main{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    font-size:1.3em;
 }
+
+.hometemple img{
+    width: 100%;
+    height:auto;
+}
+.hometemple {
+   display: grid;
+   width: 90%;
+   grid-template-columns: 1fr;
+   margin: 0 auto;
+   grid-gap: 10px;
+}
+
  .mapimage{
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top:2vw;
         }
-
+/*
         .threetemplesection {
             width:auto;
             text-size-adjust: auto;
@@ -171,10 +188,10 @@ main{
            margin: 0 auto;
            grid-gap: 15px;
            color:#fff;
-       }
+       }*/
 
 /* ------- NAV ------- */
-   nav {	margin: 0 auto;	width: 100%; background-color: rgb(64, 65, 66);	}
+   nav {	margin: 0 auto;	width: 100%; font-size:1.6em; background-color: rgb(64, 65, 66);	}
   .navigation { list-style: none; text-align: center; padding-left: 0;}
   .navigation li:first-child { display: block;}
   .navigation li { display: none;}
@@ -207,19 +224,46 @@ main{
     
      }
      .weathersummary {
-        position: absolute;
+        /*position: absolute;*/
+               /* top: 1rem;*/
+/*
         top: 250px;
-       /* top: 1rem;*/
         left: 50px;
-        margin-bottom:5px;
+        margin-bottom:5px;*/
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
         background: radial-gradient(blue, lightblue);
         border: 1px solid blue;
         padding: .5rem;
         box-shadow: 0 0 30px gray;
+        text-align:left;      
         /*dynamically change element box size depending on other elements. 
         Have it push down the navigation bar element*/
         /*top: 10px;*/
     }
+    .templepageimage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+
+      .divtemple img:hover{
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+        transition: box-shadow 0.3s ease-in-out;
+      }
+      .templeinformation{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      
+ /*.templepageimage{
+     float:left;
+ }*/
 
 /*--------FOOTER---------- */
 
@@ -243,6 +287,13 @@ main{
  }
 
 /* SERVICES */
+
+#services{
+    text-align:center;
+    padding-top:none;
+    margin-top:none;
+    font-size:3em;
+}
 #servicesdiv{
     display: block;
     margin-left: auto;
@@ -357,9 +408,10 @@ width: 50%;
     grid-gap: 15px;
     color:#fff;
 }
+/*
 .divforecast{
     display:none;
-}
+}*/
 
 /*--------------RESOURCES-------------*/
 
@@ -383,8 +435,10 @@ form{
     display:flex;
     flex-direction: column;
    /* align-items:center; to make the input box smaller, looks nice*/
-    max-width: 25%;
-
+    max-width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     /*justify-content: flex-end; Moves content to right side*/
 }
 form label, input{

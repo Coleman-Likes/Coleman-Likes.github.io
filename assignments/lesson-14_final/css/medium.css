@@ -1,8 +1,8 @@
 @media only screen and (min-width: 800px) {
-    div.fullwidth {
+    /*div.fullwidth {
     width: 100%;
-    width: 100vw; /*added this*/
-    }
+    width: 100vw; 
+    }*/
 
 
 
@@ -11,3 +11,27 @@
 	.navigation li { display: inline-block; margin-right: 1rem;}	
     .navigation li a { color: white;}
 }
+
+.weathersummary {
+    /*position: absolute;*/
+           /* top: 1rem;*/
+/*
+    top: 250px;
+    left: 50px;
+    margin-bottom:5px;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    background: radial-gradient(blue, lightblue);
+    border: 1px solid blue;
+    padding: .5rem;
+    box-shadow: 0 0 30px gray;
+    text-align:left;
+
+}
+
+
+
+
+

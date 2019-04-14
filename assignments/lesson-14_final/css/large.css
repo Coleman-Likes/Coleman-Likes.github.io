@@ -25,38 +25,27 @@ h3 {
 }
 
 .weathersummary {
-    position: absolute;
-    top: 150px;
-   /* top: 1rem;*/
+    /*position: absolute;*/
+           /* top: 1rem;*/
+/*
+    top: 250px;
     left: 50px;
-    margin-bottom:5px;
+    margin-bottom:5px;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
     background: radial-gradient(blue, lightblue);
     border: 1px solid blue;
     padding: .5rem;
     box-shadow: 0 0 30px gray;
+    text-align:left;
+  
     /*dynamically change element box size depending on other elements. 
     Have it push down the navigation bar element*/
     /*top: 10px;*/
 }
-
-.heroimage {
-    /* width: auto;*/
-     /*position:absolute;*/
-     width: 95%;
-     padding:5px;
-     float: left;
-     margin-top: 100px;
-    /* margin-bottom: 100px;*/
-     margin-right: 150px;
-    /* margin-left: 80px;*/
- }
-
- .divforecast{
-    /*display: grid;
-    width: 90%;
-    grid-template-rows: 1fr;
-    margin: 0 auto;
-    grid-gap: 10px;*/
+ /*.divforecast{
     display: grid;
     color:black;
     justify-content: space-around;
@@ -71,7 +60,7 @@ h3 {
 }
 .divforecast div{
     color:white;
-}
+}*/
 
 main{
     clear:both;
@@ -85,7 +74,17 @@ main{
  }
 
 
+/*HOME*/
+.hometemple {
+    width:90%;
+    height:auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
+.hometemple img{
+    height:400px;
+}
  /*center text and move menu below weather summary*/
  
   /* Change the link color to #111 (black) on hover */
@@ -117,3 +116,13 @@ main{
     grid-template-columns: 1fr 1fr 1fr;
 }
 }
+
+/*TEMPLE PAGE */
+/*
+.templeinformation{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }*/
+
