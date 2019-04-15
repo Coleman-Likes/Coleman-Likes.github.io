@@ -1,5 +1,5 @@
 var section = document.querySelector("article");
-var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+var requestURL = '../';
 var request = new XMLHttpRequest();
 
 request.open('GET', requestURL);

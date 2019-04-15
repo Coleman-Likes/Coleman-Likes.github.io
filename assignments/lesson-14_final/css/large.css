@@ -35,8 +35,8 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     width: 30%;
-    background: radial-gradient(blue, lightblue);
-    border: 1px solid blue;
+    background: radial-gradient(rgb(14, 134, 182), rgb(20, 89, 218));
+    border: 1px solid blue(255, 0, 0);
     padding: .5rem;
     box-shadow: 0 0 30px gray;
     text-align:left;

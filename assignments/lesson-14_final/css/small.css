@@ -244,8 +244,8 @@ main{
         margin-left: auto;
         margin-right: auto;
         width: 50%;
-        background: radial-gradient(blue, lightblue);
-        border: 1px solid blue;
+        background: radial-gradient(rgb(255, 72, 0), lightblue);
+        border: 1px solid rgb(5, 170, 235);
         padding: .5rem;
         box-shadow: 0 0 30px gray;
         text-align:left;      
