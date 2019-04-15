@@ -110,11 +110,11 @@ main{
     text-align:center;
     display: block;
 }
-
+/*
 .templeinfo{
     display:block;
     text-align:center;
-}
+}*/
 .onetemplesection {
     width:auto;
     text-size-adjust: auto;
@@ -257,11 +257,15 @@ main{
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
         transition: box-shadow 0.3s ease-in-out;
       }
-      .templeinformation{
+      .templeinfo{
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 50%;
+      }
+      .h4templeinfo{
+          text-align:center;
+          font-size:1.4em;
       }
       
  /*.templepageimage{
