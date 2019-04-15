@@ -104,7 +104,7 @@ main{
     margin-bottom:2vw;
 
 }
-#h1temple{
+#h2temple{
     font-size:2em;
     margin-bottom:2vw;
     text-align:center;
@@ -163,8 +163,11 @@ main{
     margin-right: auto;
     margin-top:2vw;
         }
+        picture{
+            text-align:center;
+        }
 /*
-        .threetemplesection {
+        .threetemples {
             width:auto;
             text-size-adjust: auto;
             text-align:justify;
@@ -172,15 +175,15 @@ main{
             font-size:2vw;
             font-size:2vh;
                 }
-                .threetemplesection img{
+                .threetemples img{
             width: 100%;
             height:auto;
         }
-        .threetemplesection img:hover {
+        .threetemples img:hover {
            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
            transition: box-shadow 0.3s ease-in-out;
          }
-        .threetemplesection {
+        .threetemples {
            display: grid;
            width: 75%;
            height:auto;
