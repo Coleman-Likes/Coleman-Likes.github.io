@@ -42,7 +42,7 @@
             <div class="formbox">
                     <label for="location">Reservation Location:</label>
                     <select name="location" id="location" required>
-                        <option selected="selected" value="radio" disabled>Select Location ...</option>
+                        <option selected="selected" value="3" disabled>Select Location ...</option>
                         <option value="saltlakecity">Salt Lake City</option>
                         <option value="stgeorge">St. George</option>
                         <option value="losangeles">Los Angeles</option>
@@ -50,7 +50,7 @@
                     </select>
                     <br>
                     <label for="dateofstay">Date:</label>
-                    <input type="date" name="date" id="date" required>
+                    <input type="date" name="date" id="dateofstay" required>
                     <br>
                     <fieldset>
                             <legend>Type of Room <em>(Choose one):</em></legend>
@@ -85,8 +85,8 @@
                 <label for="phonenumber">Phone Number:</label>
                 <input type="tel" name="phonenumber" id="phonenumber" required>
                 <br>
-                <label for="from">State or Country:</label>
-                <input list="fromid" name="from" id="stormtype" required>
+                <label for="fromarea">State or Country:</label>
+                <input list="fromid" name="from" id="fromarea" required>
                 <datalist id="fromid">
                     <option value="Utah">
                     <option value="Arizona">
