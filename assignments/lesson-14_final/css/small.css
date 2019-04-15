@@ -115,6 +115,9 @@ main{
     display:block;
     text-align:center;
 }*/
+#h3threetemples{
+    margin-top:7vw;
+}
 .onetemplesection {
     width:auto;
     text-size-adjust: auto;
@@ -163,8 +166,12 @@ main{
     margin-right: auto;
     margin-top:2vw;
         }
-        picture{
+        /*picture{
             text-align:center;
+        }*/
+        .picturedesc{
+            text-align:center;
+
         }
 /*
         .threetemples {
@@ -299,7 +306,8 @@ main{
     text-align:center;
     padding-top:none;
     margin-top:none;
-    font-size:3em;
+    font-size:2.5em;
+    font-family:'Roboto';
 }
 #servicesdiv{
     display: block;
@@ -312,12 +320,30 @@ main{
     font-size:2vw;
     text-align:center;
 }
+#listofamenities{
+    margin-top: 2em;
+}
+.liamenities{
+    margin-top: 2em;
+}
 
 #specializedservices{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+#servicesh1{
+    text-align:center;
+    font-size:2.5em;
+    font-family: 'Work Sans';
+    margin-top:6vw;
+
+}
+#freeamenities{
+    font-family: 'Work Sans';
+    font-size:2.5em;
+    margin-top:6vw;
 }
 
  /* RECEPTION*/
@@ -371,7 +397,7 @@ width: 50%;
 }
 
 
-/* --------FULL TIME MISSIONARY -----*/
+/* --------FULL TIME MISSIONARIES -----*/
 #hotelsuite{
      display: block;
      margin-left: auto;
@@ -389,12 +415,40 @@ width: 50%;
     width: 100%;
     margin-bottom:2vw;
 }
+#rentalmanager{
+    text-align:center;
+    margin-bottom:3vw;
+}
+#missionaryform{
+    margin-top:5vw;
+}
 
  /*----------CONTACT------------*/
+ #h2mail{
+     font-size:2.5vw;
+     margin-top:5vw;
+     font-family: 'Work Sans'; 
+
+ }
+ #h3maphq{
+     font-size:2.5vw;
+     font-family: 'Work Sans'; 
+
+ }
  #mailaddress{
      text-align:center;
-     font-family: 'Work Sans' sans-serif; 
+     font-family: 'Work Sans'; 
      /*second font is backup font*/
+ }
+ #resourceslink{
+     font-family: 'Work Sans';
+     text-align:center;
+     color:#fff;
+     margin-top:5vw;
+     display: block;
+     font-size:2em;
+     margin-left: auto;
+     margin-right: auto;
  }
 
  /* ----------GALLERY-7----------*/
@@ -436,7 +490,7 @@ form{
     color: white;
     /*text-align:center;*/
     font-size: 1.5vw;
-    margin-left: 10px;
+    margin-left: 3vw;
 }
 .formbox{
     display:flex;
@@ -451,6 +505,10 @@ form{
 form label, input{
     margin:1.5%;
     margin-left: 10px;
+}
+input{
+display:flex;
+justify-content:space-around;
 }
 #thankyou{
     font-size:3vw;
