@@ -11,17 +11,17 @@ request.onload = function () {
 }
 
 function newTowns(jsonObj) {
-    var idahotowns = jsonObj["towns"];
+    var templename = jsonObj["closures"];
 
-    for (var i = 0; i < idahotowns.length; i++) {
-        if (idahotowns[i].name == "Preston" || idahotowns[i].name == "Soda Springs"
-            || idahotowns[i].name == "Fish Haven") {
+    for (var i = 0; i < templename.length; i++) {
+        if (templename[i].name == "Preston" || templename[i].name == "Soda Springs"
+            || templename[i].name == "Fish Haven") {
 
             var article = document.createElement("article");
             var article2 = document.createElement("section");
 
             article.setAttribute("class", "idahoarticle");
-            article.setAttribute("id", idahotowns[i].name + "article");
+            article.setAttribute("id", templename[i].name + "article");
 
             var myH2 = document.createElement('h2');
             var myPara1 = document.createElement('p');
