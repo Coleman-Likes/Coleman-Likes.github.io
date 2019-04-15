@@ -11,6 +11,4 @@ slcweatherRequest.onload = function () {
     document.getElementById('slc-hum').innerHTML = weatherData.main.humidity;
     document.getElementById('slc-wind').innerHTML = weatherData.wind.speed;
 
-    name(parseInt(weatherData.main.temp),
-        parseInt(weatherData.wind.speed));
 }
