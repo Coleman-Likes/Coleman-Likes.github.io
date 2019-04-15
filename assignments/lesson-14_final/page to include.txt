@@ -1,3 +1,0 @@
-Include a 
-resource page that references 
-outside content, if necessary, as a link in the footer.
