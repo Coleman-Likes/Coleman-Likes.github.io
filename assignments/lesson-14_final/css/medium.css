@@ -30,6 +30,11 @@
     text-align:left;
 
 }
+iframe{
+    border-width: 0px;
+    border:none;
+
+}
 
 
 
